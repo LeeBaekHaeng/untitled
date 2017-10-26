@@ -2,4 +2,4 @@ import os
 
 # print os
 
-print os.name
+print 'os.name: ' + os.name
