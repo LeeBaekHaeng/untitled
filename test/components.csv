@@ -1,0 +1,2519 @@
+﻿,카테고리 명,카테고리 설명,컴포넌트 명,패키지명,dependency 패키지,컴포넌트 설명,테이블명,버전,web 배포여부,게시판 추가기능 사용여부,카테고리 명_영문,카테고리 설명_영문,컴포넌트 명_영문,컴포넌트 설명_영문
+,catName,catDescription,name,packageName,dependencyPackage,description,useTable,version,webexist,addedOptions,catName,catDescription,name,description
+,공통,공통으로 사용되는 패키지,공통,egovframework.com.cmm,dependencyPackage,"-설정파일
+config, 프로퍼티 파일 포함
+- 이중등록방지 컴포넌트
+새로고침 등의 중복 request 호출 시 등록 처리 등에 대한 이중 등록을 방지하는 기능을 제공
+- HTTPS 자동전환
+서버내의 특정 URL의 경우 HTTP로 호출 되더라도 HTTPS로 전환 하여 Redirect 하고, 그 외의 URL의 경우는 HTTP로 연결
+- HTTP Request 정보취득
+Http Request(HttpServletRequest) 정보를 서비스 코드나 DAO 코드 상에서 취득할 수 있는 기능을 제공","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Common,Commonly used package,Common,"-Setting Files
+Including config, property files"
+,공통,공통으로 사용되는 패키지,협업공통,egovframework.com.cop.com,dependencyPackage,협업에서 공통으로 사용되는 패키지,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Common,Commonly used package,"
+Collaboration Common
+",Package which is commonly used at collaboration
+,로그인,시스템 접근을 위해 인증서를 통하여 시스템 사용자인지 여부를 인증해 주는 서비스로 보안상의 목적으로 사용자를 검증하기 위해 시스템 등에 접속을 시도하는 사용자에 대한 정보의 확보를 지원하는 서비스를 정의함,인증서로그인,egovframework.com.utl.sec,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.utl.sim",로그인한 사용자의 공인인증서를 사용하여 사용자의 인증을 처리함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMTNFILE
+COMTNFILEDETAIL
+COMTHEMAILDSPTCHMANAGE",3.6.0,Y,addedOptions,User Integrated Authentication ,"
+Defines a security service that support acquisition of information of users approaching access to the system through certification of online authentication",Certifications Login,Use login user's official certification to validate user
+,로그인,시스템 접근을 위해 ID/PW를 통하여 시스템 사용자인지 여부를 인증해 주는 서비스로 보안상의 목적으로 사용자를 검증하기 위해 시스템 등에 접속을 시도하는 사용자에 대한 정보의 확보를 지원하는 서비스를 정의함,일반로그인,egovframework.com.uat.uia,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.utl.sim",사용자의 로그인 정보(사용자ID/패스워드)를 입력받아 사용자의 인증을 처리함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMTNFILE
+COMTNFILEDETAIL
+COMTHEMAILDSPTCHMANAGE",3.6.0,Y,addedOptions,User Integrated Authentication,Defines a security service that support acquisition of information of users approaching access to the system through certification of system users' ID/PW,General Login,Get user's login information(user ID/password) to validate user 
+,로그인,사용자의 로그인 정보를 입력받아 사용자의 인증을 처리하는 기능을 제공함,로그인정책관리,egovframework.com.uat.uap,"egovframework.com.cmm,
+egovframework.com.utl.sim,
+egovframework.com.utl.fcc","사용자 로그인 정책에 맞게 로그인을 제한하는 기능(특정 IP에 대한 로그인 제한, 중복로그인 방지)을 제공함","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMTNGNRLMBER
+COMVNUSERMASTER
+COMTNLOGINPOLICY",3.6.0,Y,addedOptions,Login,Get user's login information to validate user ,Login Policy Management,"Limit login to suit user login policy(Login restrictions on a specific IP, Prevent multiple login)"
+,실명확인,실명을 확인하는 기능을 제공함,"실명확인/
+공공i-Pin실명확인",egovframework.com.sec.rnc,egovframework.com.cmm,"-실명확인
+주민번호와 성명을 이용하여 실명확인서비스(예; 한국신용평가정보)와 연계하여 본인임을 확인하는 기능
+-공공i-Pin실명확인
+공공i-Pin(G-Pin)을 이용하여 공공i-PIN센터와 연계하여 실명을 확인하는 기능","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMTNGNRLMBER
+COMVNUSERMASTER
+COMTNLOGINPOLICY",3.6.0,Y,addedOptions,Real Name Authentification ,Provide real name authentification function,"Real Name Authentification/
+Public i-Pin Real Name Authentification","- Real Name Authentification 
+Provide identification using Social Security Number and name to connect real name authentification service(ex:National Information & Credit Evaluation Inc) 
+-Public i-Pin Real Name Authentification
+Provide function that identifies real name using public i-pin(G-Pin) and make a connection to the public i-PIN center
+"
+,역할/권한관리,"사용자별, 부서별 권한을 부여하고 관리하는 기능을 제공함",부서권한관리,egovframework.com.sec.drm,"egovframework.com.cmm,
+egovframework.com.sec.gmt,
+egovframework.com.sec.rgm,
+egovframework.com.sec.rmt,
+egovframework.com.sec.ram,
+egovframework.com.sec.security,
+egovframework.com.uat.uia,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.utl.sim",부서별로 권한을 부여하는 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMTNGNRLMBER
+COMVNUSERMASTER
+COMTNLOGINPOLICY",3.6.0,Y,addedOptions,Role/Authority Management,Provide authority and management according to types of users and divisions ,Department Authority Management,Provide authority according to types of divisions 
+,역할/권한관리,"사용자별, 부서별 권한을 부여하고 관리하는 기능을 제공함",권한그룹관리,egovframework.com.sec.rgm,"egovframework.com.cmm,
+egovframework.com.sec.drm,
+egovframework.com.sec.gmt,
+egovframework.com.sec.rmt,
+egovframework.com.sec.ram,
+egovframework.com.sec.security,
+egovframework.com.uat.uia,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.utl.sim",권한그룹을 관리하고 개별 사용자를 할당할 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMTNGNRLMBER
+COMVNUSERMASTER
+COMTNLOGINPOLICY",3.6.0,Y,addedOptions,Role/Authority Management,Provide authority and management according to types of users and divisions ,    Authorized Group Management,Manage authorized group and assign individual user 
+,역할/권한관리,"사용자별, 부서별 권한을 부여하고 관리하는 기능을 제공함",롤관리,egovframework.com.sec.rmt,"egovframework.com.cmm,
+egovframework.com.sec.drm,
+egovframework.com.sec.gmt,
+egovframework.com.sec.rgm,
+egovframework.com.sec.ram,
+egovframework.com.sec.security,
+egovframework.com.uat.uia,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.utl.sim",사용자 역할에 따라 접근권한을 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMTNGNRLMBER
+COMVNUSERMASTER
+COMTNLOGINPOLICY",3.6.0,Y,addedOptions,Role/Authority Management,Provide authority and management according to types of users and divisions ,Role Management,Manage the authority to access by user's role 
+,역할/권한관리,"사용자별, 부서별 권한을 부여하고 관리하는 기능을 제공함",권한관리,egovframework.com.sec.ram,"egovframework.com.cmm,
+egovframework.com.sec.drm,
+egovframework.com.sec.gmt,
+egovframework.com.sec.rgm,
+egovframework.com.sec.rmt,
+egovframework.com.sec.security,
+egovframework.com.uat.uia,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.utl.sim",사용자에게 권한을 부여하고 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNEMPLYRSCRTYESTBS
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNAUTHORINFO
+COMTNROLES_HIERARCHY
+COMTNROLEINFO
+COMTNAUTHORROLERELATE
+COMTNFILE
+COMTNFILEDETAIL
+COMTHEMAILDSPTCHMANAGE",3.6.0,Y,addedOptions,Role/Authority Management,Provide authority and management according to types of users and divisions ,Authority Management,Provide and mange user's authority
+,역할/권한관리,"사용자별, 부서별 권한을 부여하고 관리하는 기능을 제공함",그룹관리,egovframework.com.sec.gmt,"egovframework.com.cmm,
+egovframework.com.sec.drm,
+egovframework.com.sec.ram,
+egovframework.com.sec.rgm,
+egovframework.com.sec.rmt,
+egovframework.com.sec.security,
+egovframework.com.uat.uia,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.utl.sim",사용자 그룹별 권한관리를 제공함,"COMTECOPSEQ
+COMTNEMPLYRSCRTYESTBS
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNAUTHORINFO
+COMTNROLES_HIERARCHY
+COMTNROLEINFO
+COMTNAUTHORROLERELATE
+COMTNFILE
+COMTNFILEDETAIL
+COMTHEMAILDSPTCHMANAGE",3.6.0,Y,addedOptions,Role/Authority Management,Provide authority and management according to types of users and divisions ,Group Management,Provide authority according to types of users 
+,역할/권한관리,"사용자별, 부서별 권한을 부여하고 관리하는 기능을 제공함",보안,egovframework.com.sec.security,"egovframework.com.cmm,
+egovframework.com.sec.drm,
+egovframework.com.sec.ram,
+egovframework.com.sec.rgm,
+egovframework.com.sec.rmt,
+egovframework.com.sec.gmt,
+egovframework.com.uat.uia,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.utl.sim",보안관련 유틸리티,"COMTECOPSEQ
+COMTNEMPLYRSCRTYESTBS
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNAUTHORINFO
+COMTNROLES_HIERARCHY
+COMTNROLEINFO
+COMTNAUTHORROLERELATE
+COMTNFILE
+COMTNFILEDETAIL
+COMTHEMAILDSPTCHMANAGE",3.6.0,Y,addedOptions,Role/Authority Management,Provide authority and management according to types of users and divisions ,Security,Security-related utilities
+,암호화/복호화,"보안을 위하여 데이터를 암호화 하거나 암호화된 데이터를 복호화 하기 위해, 암복호화 알고리즘(GPKI)을 통한 데이터의 암호화 및 복호화 기능을 제공함",암호화/복호화,egovframework.com.sec.pki,egovframework.com.cmm,GPKI를 통한 데이터의 암호화/복호화 기능 및 전자서명과 전자서명 확인 기능을 제공함,"COMTECOPSEQ
+COMTNEMPLYRSCRTYESTBS
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNAUTHORINFO
+COMTNROLES_HIERARCHY
+COMTNROLEINFO
+COMTNAUTHORROLERELATE
+COMTNFILE
+COMTNFILEDETAIL
+COMTHEMAILDSPTCHMANAGE",3.6.0,Y,addedOptions,Encryption/Decryption,Provide data encrypt/decrypt function through GPKI to encrypt data for security or decrypt encrypted data,Encryption/Decryption,"Encrypt/decrypt data through GPKI and provide electronic signature, electronic signature confirmation"
+,통계,"통계 수집, 분석, 정보제공을 관리하기 위해 제공되는 정보와 서비스를 정의함",통계공통,egovframework.com.sts.com,egovframework.com.cmm,통계 패키지에서 공통으로 사용,"COMTECOPSEQ
+COMTNEMPLYRSCRTYESTBS
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNAUTHORINFO
+COMTNROLES_HIERARCHY
+COMTNROLEINFO
+COMTNAUTHORROLERELATE
+COMTNFILE
+COMTNFILEDETAIL
+COMTHEMAILDSPTCHMANAGE",3.6.0,Y,addedOptions,Statistics,"Define information and service to manage statistics collection, analyzation, providing information ",Common Statistics,Commonly used at statistics package
+,통계,"통계 수집, 분석, 정보제공을 관리하기 위해 제공되는 정보와 서비스를 정의함",게시물통계,egovframework.com.sts.bst,"egovframework.com.cmm,
+egovframework.com.sts.com,
+egovframework.com.sym.cal","각종 게시물 현황에 대한 통계자료를 게시판 유형, 게시판 템플릿, 게시판 속성에 따라 기간별(연도별, 월별, 일별)로 그래프와 텍스트 형태 두가지 방식으로 제공함","COMTECOPSEQ
+COMTNTMPLATINFO
+COMTSBBSSUMMARY
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNBBSMASTER
+COMTNBBS",3.6.0,Y,addedOptions,Statistics,"Define information and service to manage statistics collection, analyzation, providing information ",Post Statistics,"Provide statistic of status on various posts in two forms (graph, text) according to dates (yearly, monthly, daily), templates, categories, and other characteristics"
+,통계,"통계 수집, 분석, 정보제공을 관리하기 위해 제공되는 정보와 서비스를 정의함",사용자통계,egovframework.com.sts.ust,"egovframework.com.cmm
+egovframework.com.sts.com
+egovframework.com.sts.ust
+egovframework.com.sym.cal","각종 게시물 현황에 대한 통계자료를 게시판 유형, 게시판 템플릿, 게시판 속성에 따라 기간별(연도별, 월별, 일별)로 그래프와 텍스트 형태 두가지 방식으로 제공함","COMTECOPSEQ
+COMTSUSERSUMMARY
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER",3.6.0,Y,addedOptions,Statistics,"Define information and service to manage statistics collection, analyzation, providing information ",User Statistics,"Provide statistic of status on various posts in two forms (graph, text) according to dates (yearly, monthly, daily), templates, categories, and other characteristics"
+,통계,"통계 수집, 분석, 정보제공을 관리하기 위해 제공되는 정보와 서비스를 정의함",접속통계,egovframework.com.sts.cst,"egovframework.com.cmm,
+egovframework.com.sts.com,
+egovframework.com.sym.cal","각종 게시물 현황에 대한 통계자료를 게시판 유형, 게시판 템플릿, 게시판 속성에 따라 기간별(연도별, 월별, 일별)로 그래프와 텍스트 형태 두가지 방식으로 제공함","COMTECOPSEQ
+COMTNLOGINLOG
+COMTSSYSLOGSUMMARY
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE",3.6.0,Y,addedOptions,Statistics,"Define information and service to manage statistics collection, analyzation, providing information ",Connection Statistics,"Provide statistic of status on various posts in two forms (graph, text) according to dates (yearly, monthly, daily), templates, categories, and other characteristics"
+,통계,"통계 수집, 분석, 정보제공을 관리하기 위해 제공되는 정보와 서비스를 정의함",화면통계,egovframework.com.sts.sst,"egovframework.com.cmm,
+egovframework.com.sts.com,
+egovframework.com.sym.mnu.mpm,
+egovframework.com.sym.prm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.sim,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.sym.mnu.mcm,
+egovframework.com.sym.cal","각종 게시물 현황에 대한 통계자료를 게시판 유형, 게시판 템플릿, 게시판 속성에 따라 기간별(연도별, 월별, 일별)로 그래프와 텍스트 형태 두가지 방식으로 제공함","COMTECOPSEQ
+COMTNEMPLYRSCRTYESTBS
+COMTSWEBLOGSUMMARY
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNAUTHORINFO
+COMTNPROGRMLIST
+COMTHPROGRMCHANGEDTLS
+COMTNMENUINFO
+COMTNSITEMAP
+COMTNMENUCREATDTLS
+COMTHEMAILDSPTCHMANAGE
+COMTNFILE",3.6.0,Y,addedOptions,Statistics,"Define information and service to manage statistics collection, analyzation, providing information ",Screen Statistics,"Provide statistic of status on various posts in two forms (graph, text) according to dates (yearly, monthly, daily), templates, categories, and other characteristics"
+,통계,"통계 수집, 분석, 정보제공을 관리하기 위해 제공되는 정보와 서비스를 정의함",보고서통계,egovframework.com.sts.rst,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal","각종 게시물 현황에 대한 통계자료를 게시판 유형, 게시판 템플릿, 게시판 속성에 따라 기간별(연도별, 월별, 일별)로 그래프와 텍스트 형태 두가지 방식으로 제공함","COMTECOPSEQ
+COMTNREPRTSTATS
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Statistics,"Define information and service to manage statistics collection, analyzation, providing information ",Report Statistics,"Provide statistic of status on various posts in two forms (graph, text) according to dates (yearly, monthly, daily), templates, categories, and other characteristics"
+,통계,"통계 수집, 분석, 정보제공을 관리하기 위해 제공되는 정보와 서비스를 정의함",자료이용현황통계,egovframework.com.sts.dst,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal","자료이용현황통계는 각종 게시판에서 다운받은 첨부화일에 대해 게시판별, 기간구분별, 기간별 통계자료를 제공함(219종에 없는 패키지)","COMTECOPSEQ
+COMTNDTAUSESTATS
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNBBSMASTER
+COMTNBBS
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Statistics,"Define information and service to manage statistics collection, analyzation, providing information ",Present Data Usage Statistics,"Present data usage statistics provide statistics data according to bbs, period refer to attatched file downloaded from various bbs(package which is not one of 219 packages)"
+,게시판,"온라인상에서 정보의 전달, 공유 등을 지원하는 서비스를 정의함",게시판 템플릿,egovframework.com.cop.tpl,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.bbs,
+egovframework.com.cop.com,
+egovframework.com.utl.sim,
+egovframework.com.sym.cal,
+egovframework.com.utl.wed",게시판별 디자인 템플릿을 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNDTAUSESTATS
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNBBSMASTER
+COMTNBBS
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,BBS,Defines service that deliver and share information online ,BBS Template,Manage design template according to type of BBS
+,게시판,"온라인상에서 정보의 전달, 공유 등을 지원하는 서비스를 정의함",게시판,egovframework.com.cop.bbs,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.com,
+egovframework.com.utl.sim,
+egovframework.com.cop.tpl,
+egovframework.com.sym.cal,
+egovframework.com.utl.wed","-게시판
+사용자 간의 정보공유를 위해 공통으로 사용되는 게시판을 관리하는 기능을 제공함
+-게시판생성관리
+게시판 생성과 관련하여 Setup 정보를 관리하는 기능을 제공함
+-공지사항관리
+공지사항을 등록하고 등록된 공지사항을 검색, 조회하는 기능을 제공함
+-디자인템플릿
+게시판별 디자인 템플릿을 관리하는 기능을 제공함
+-유효게시판
+게시물의 유효일을 설정할 수 있는 게시판을 관리하는 기능을 제공함
+-익명게시판
+게시물 등록자의 이름이 나타나지 않는 게시판을 관리하는 기능을 제공함
+-자료실관리
+자료를 첨부파일로 등록하여 관리하며, 등록된 자료의 검색 및 조회, 다운로드 기능을 제공함","COMTECOPSEQ
+COMTNTMPLATINFO
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNBBSMASTER
+COMTNBBSUSE
+COMTNBBS
+COMTNCMMNTY
+COMTNFILE
+COMTNFILEDETAIL
+COMTNCLUB
+COMTNBBSMASTEROPTN",3.6.0,Y,addedOptions,BBS,Defines service that deliver and share information online ,BBS ,"-BBS 
+Provide function that manage commonly used  information sharing bbs
+-BBS Creation Management
+Provide setup manager for BBS creation
+-Notice Management
+Support functions to register, browse, and view notices
+-Design Template
+ Provide Design Template manager according to types of BBS
+-Valid BBS
+Provide function that supports setup of valid date for BBS' contents
+-Anonymous BBS
+Provide Anonymous BBS manager
+-Data Management
+Provide data management through data attachments, and support to browse,view, and view them"
+,게시판,"온라인상에서 정보의 전달, 공유 등을 지원하는 서비스를 정의함",댓글관리,egovframework.com.cop.cmt,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.bbs,
+egovframework.com.cop.com,
+egovframework.com.utl.sim,
+egovframework.com.cop.tpl,
+egovframework.com.sym.cal,
+egovframework.com.utl.wed",게시판에 등록된 글에 대해 한 줄 댓글을 작성하는 기능을 제공함,"COMTECOPSEQ
+COMTNTMPLATINFO
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNBBSMASTER
+COMTNBBSUSE
+COMTNBBS
+COMTNCMMNTY
+COMTNCOMMENT
+COMTNFILE
+COMTNFILEDETAIL
+COMTNCLUB
+COMTNBBSMASTEROPTN",3.6.0,Y,addedOptions,BBS,Defines service that deliver and share information online ,Comment Management,Provide function that make one-line comment on bbs registered posts
+,게시판,"온라인상에서 정보의 전달, 공유 등을 지원하는 서비스를 정의함",스크랩기능,egovframework.com.cop.scp,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.bbs,
+egovframework.com.cop.com,
+egovframework.com.utl.sim,
+egovframework.com.cop.tpl,
+egovframework.com.sym.cal,
+egovframework.com.utl.wed",게시판 글 중에 특정 글들을 한 곳에 모아 조회할 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTNSCRAP
+COMTNTMPLATINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNBBSMASTER
+COMTNBBSUSE
+COMTNBBS
+COMTNCMMNTY
+COMTNFILE
+COMTNFILEDETAIL
+COMTNCLUB
+COMTNBBSMASTEROPTN",3.6.0,Y,addedOptions,BBS,Defines service that deliver and share information online ,Scrap Function,Provide function that collect specific posts in one place for inquiry
+,게시판,"온라인상에서 정보의 전달, 공유 등을 지원하는 서비스를 정의함",만족도조사,egovframework.com.cop.stf,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.bbs,
+egovframework.com.cop.com,
+egovframework.com.utl.sim,
+egovframework.com.cop.tpl,
+egovframework.com.sym.cal,
+egovframework.com.utl.wed","Q&A등 게시판에 등록한 글에 대해 만족도를 만족, 보통, 미흡 등으로 조사하는 기능을 제공함","COMTECOPSEQ
+COMTNTMPLATINFO
+COMTNSTSFDG
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNBBSMASTER
+COMTNBBSUSE
+COMTNBBS
+COMTNCMMNTY
+COMTNFILE
+COMTNFILEDETAIL
+COMTNCLUB
+COMTNBBSMASTEROPTN",3.6.0,Y,addedOptions,BBS,Defines service that deliver and share information online ,Satisfaction Research,"Provide functions to survey satisfaction rate of posts in Q&A by three categories (satisfied, average, unsatisfied)"
+,커뮤니티,"공동의 사용자 작업그룹, 공동 관심분야 사용자의 협업 및 정보공유를 지원하기 위한 자료의 조회, 등록, 수정, 삭제 기능을 제공하고 사용자의 등급별 관리 및 축적 자료의 검증/관리, 커뮤니티 신설을 제공하는 서비스를 정의함",커뮤니티관리,egovframework.com.cop.cmy,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.bbs,
+egovframework.com.cop.com,
+egovframework.com.utl.sim,
+egovframework.com.cop.clb,
+egovframework.com.cop.tpl,
+egovframework.com.sym.cal,
+egovframework.com.utl.wed","-커뮤니티관리
+커뮤니티 개설, 가입, 등록과 관련한 활동을 관리하는 기능을 제공함
+-커뮤니티방명록
+포털에 개설된 커뮤니티의 활동 중의 하나인 방명록 정보를 관리하는 기능을 제공함
+-커뮤니티사진첩
+커뮤니티에서 활동하는 회원들이 등록한 사진첩을 관리하는 기능을 제공함","COMTECOPSEQ
+COMTNTMPLATINFO
+COMTHCONFMHISTORY
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNBBSMASTER
+COMTNBBSUSE
+COMTNBBS
+COMTNCMMNTY
+COMTNCMMNTYUSER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNCLUB
+COMTNCLUBUSER
+COMTNBBSMASTEROPTN",3.6.0,Y,addedOptions,Community,"Provide service that enables community registration and management and verification of user's ratings and data. Support functions to view, register, edit and delete data to help  users with common interest or task group to cooperate and share information",Community Management,"-Community Management
+Provide management of activities related to establishment and registration of community
+
+-Community BBS For Visitors
+Provide management of visitor's BBS information that are one of many community's activities established on browsing websites
+
+-Community Gallery
+Provide management of community's gallery that are consisted and used by community users
+ "
+,동호회,커뮤니티의 활동 중의 하나로 동호회에 대한 정보를 관리하는 기능을 제공함,동호회관리,egovframework.com.cop.clb,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.bbs,
+egovframework.com.cop.com,
+egovframework.com.utl.sim,
+egovframework.com.cop.cmy,
+egovframework.com.cop.tpl,
+egovframework.com.sym.cal,
+egovframework.com.utl.wed",커뮤니티의 활동 중의 하나로 동호회에 대한 정보를 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNTMPLATINFO
+COMTHCONFMHISTORY
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNBBSMASTER
+COMTNBBSUSE
+COMTNBBS
+COMTNCMMNTY
+COMTNCMMNTYUSER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNCLUB
+COMTNCLUBUSER
+COMTNBBSMASTEROPTN",3.6.0,Y,addedOptions,Club,"One of the community activities, this category manage information about club ",Club Management,"One of the community activities, this category manage information about club "
+,문자메시지,전자정부SMS(M-gov) 서비스를 이용하기 위한 문자메시지 전송 인터페이스를 제공함,문자메시지서비스,egovframework.com.cop.sms,egovframework.com.cmm,전자정부SMS(M-gov) 서비스를 이용하기 위한 문자메시지 전송 인터페이스를 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNSMS
+COMTNSMSRECPTN",3.6.0,Y,addedOptions,SMS,Provide SMS sending interface to use e-government SMS (M-gov)service,SMS Service,Provide SMS sending interface to use e-government SMS (M-gov)service
+,일정관리,"팀 전체 또는 개인이 서로의 작업 일정, 미팅 및 활동 등을 열람, 추가, 수정할 수 있도록 지원하는 서비스를 정의함",일지관리,egovframework.com.cop.smt.dsm,"egovframework.com.cmm,
+egovframework.com.cop.smt.sam,
+egovframework.com.cop.smt.sim,
+egovframework.com.cop.smt.sdm,
+egovframework.com.uss.olp.mgt,
+egovframework.com.sym.cal","지시사항, 보고문서, 업무일지, 특이사항 등의 일지를 등록하고 관리하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTNMTGINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSCHDULINFO
+COMTNDIARYINFO",3.6.0,Y,addedOptions,Schedule Management,"Defines service for a team or a person to view, edit, or add task schedules and activity logs",Work Log Management ,"Provide function that register and manage the logs such as instructions, report documents, work logs and unusual facts  "
+,일정관리,"팀 전체 또는 개인이 서로의 작업 일정, 미팅 및 활동 등을 열람, 추가, 수정할 수 있도록 지원하는 서비스를 정의함",전체일정,egovframework.com.cop.smt.sam,"egovframework.com.cmm,
+egovframework.com.cop.smt.dsm,
+egovframework.com.cop.smt.sim,
+egovframework.com.cop.smt.sdm,
+egovframework.com.uss.olp.mgt,
+egovframework.com.sym.cal",전체 일정을 검색하고 조회하는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTNMTGINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSCHDULINFO
+COMTNDIARYINFO",3.6.0,Y,addedOptions,Schedule Management,"Defines service for a team or a person to view, edit, or add task schedules and activity logs",Whole Schedule,"
+Provide function that search and inquire the whole schedule "
+,일정관리,"팀 전체 또는 개인이 서로의 작업 일정, 미팅 및 활동 등을 열람, 추가, 수정할 수 있도록 지원하는 서비스를 정의함",부서일정관리,egovframework.com.cop.smt.sdm,"egovframework.com.cmm,
+egovframework.com.cop.smt.dsm,
+egovframework.com.cop.smt.sam,
+egovframework.com.cop.smt.sim,
+egovframework.com.uss.olp.mgt,
+egovframework.com.sym.cal",부서원이 등록한 일정을 관리하고 일별/주간으로 조회하는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTNMTGINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSCHDULINFO
+COMTNDIARYINFO",3.6.0,Y,addedOptions,Schedule Management,"Defines service for a team or a person to view, edit, or add task schedules and activity logs",Division Schedule Management,Provide functions to manage schedule which is registered by division member and to view them daily/weekly
+,일정관리,"팀 전체 또는 개인이 서로의 작업 일정, 미팅 및 활동 등을 열람, 추가, 수정할 수 있도록 지원하는 서비스를 정의함",일정관리,egovframework.com.cop.smt.sim,"egovframework.com.cmm,
+egovframework.com.cop.smt.dsm,
+egovframework.com.cop.smt.sam,
+egovframework.com.cop.smt.sdm,
+egovframework.com.uss.olp.mgt,
+egovframework.com.sym.cal",공유일정으로 등록한 일정을 관리하고 일별/주간으로 조회하는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTNMTGINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSCHDULINFO
+COMTNDIARYINFO",3.6.0,Y,addedOptions,Schedule Management,"Defines service for a team or a person to view, edit, or add task schedules and activity logs",Schedule Management,Provide functions to manage shared shedules that are registered and to view them daily/weekly 
+,일정관리,"팀 전체 또는 개인이 서로의 작업 일정, 미팅 및 활동 등을 열람, 추가, 수정할 수 있도록 지원하는 서비스를 정의함",간부일정관리,egovframework.com.cop.smt.lsm,"egovframework.com.cmm,
+egovframework.com.sym.cal","내부회원(인사)정보를 연계하여 기관내 간부일정을 메인화면에서 확인 할 수 있는 기능으로 간부등록, 일/주/월간 일정현황 검색, 업무담당자 설정관리 기능을 제공함","COMTECOPSEQ
+COMTNLEADERSTTUS
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNLEADERSCHDUL
+COMTNLEADERSCHDULDE",3.6.0,Y,addedOptions,Schedule Management,"Defines service for a team or a person to view, edit, or add task schedules and activity logs",Executive Schedule Management,"Provide functions to check organization's executive schedule on main page by connecting human resource's information. Provide functions to  register executive, manage task holder, and to browse current daily/weekly/monthly schedule"
+,일정관리,"팀 전체 또는 개인이 서로의 작업 일정, 미팅 및 활동 등을 열람, 추가, 수정할 수 있도록 지원하는 서비스를 정의함",부서업무함관리,egovframework.com.cop.smt.djm,egovframework.com.cmm,부서의 업무를 등록하고 업무함에 보관하여 부서업무함을 통해 확인할 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNDEPTJOB
+COMTNDEPTJOBBX
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Schedule Management,"Defines service for a team or a person to view, edit, or add task schedules and activity logs","
+Division Tesk Folder Management
+",Provide functions to check tasks by registering and sharing tasks through task folder
+,일정관리,"팀 전체 또는 개인이 서로의 작업 일정, 미팅 및 활동 등을 열람, 추가, 수정할 수 있도록 지원하는 서비스를 정의함",주간/월간보고관리,egovframework.com.cop.smt.wmr,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal",주간/월간 업무 보고를 등록하고 조회할 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNWIKMNTHNGREPRT",3.6.0,Y,addedOptions,Schedule Management,"Defines service for a team or a person to view, edit, or add task schedules and activity logs",Weekly/Monthly Reports Management ,Provide function that register and inquire weekly/monthly work reports
+,일정관리,"팀 전체 또는 개인이 서로의 작업 일정, 미팅 및 활동 등을 열람, 추가, 수정할 수 있도록 지원하는 서비스를 정의함",메모/할일관리,egovframework.com.cop.smt.mtm,"egovframework.com.cmm,
+egovframework.com.sym.cal",사용자가 해야 할 일 등을 일별로 메모하여 해당 일에 오늘의 할일을 알려주는 기능을 제공함,"COMTECOPSEQ
+COMTNMEMOTODO
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Schedule Management,"Defines service for a team or a person to view, edit, or add task schedules and activity logs",Memo/ To-do List Management,Provide function that make a daily memo on user's to-do list and let user know what to do today 
+,일정관리,"팀 전체 또는 개인이 서로의 작업 일정, 미팅 및 활동 등을 열람, 추가, 수정할 수 있도록 지원하는 서비스를 정의함",메모보고,egovframework.com.cop.smt.mrm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.wed,
+egovframework.com.sym.cal",기관내 업무보고를 메모 전달형태로 보고하는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNMEMOREPRT",3.6.0,Y,addedOptions,Schedule Management,"Defines service for a team or a person to view, edit, or add task schedules and activity logs",Memo Report,Provide funtion to make business report by memo
+,전자우편,온라인상에서 네트워크를 이용한 메시지의 송수신을 지원하는 서비스를 정의함,메일연동 인터페이스,egovframework.com.cop.ems,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.sim,
+egovframework.com.utl.wed","메일 솔루션과의 연동을 위한 표준 인터페이스 기능. 전자우편을 자체적으로 발송하는 기능은 구성하지 않으며, 메일발송시스템에 XML형태로 전자우편 내용을 전송하고, 수신결과를 받아 내역관리를 할 수 있는 인터페이스를 지원하는 기능과 발송할 메일 내역을 관리하는 기능을 제공함","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTHEMAILDSPTCHMANAGE",3.6.0,Y,addedOptions,E-mail,Defines service that enables message transmission/reception through online network, Mail Connected Interface,"Standard interface function which exists for mail solution and interlock. The ability to send e-mail its own is not composed, e-mail sent to the mail sending system in xml format to transfer contents, and recieve the result to manage function supports interface which manage the detail history and send mail history"
+,주소록/명함록,"개인주소록, 부서주소록 등 이메일 주소를 그루핑하여 관리하는 기능을 제공함/개인의 명함에 대한 정보를 관리하는 기능을 제공함",명함관리,egovframework.com.cop.ncm,"egovframework.com.cmm,
+egovframework.com.sym.ccm.zip",개인의 명함에 대한 정보를 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTCZIP
+COMTRDNMADRZIP
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNNCRD
+COMTNNCRDUSER
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Address/ Business Card,"Compartmentize groups to manage, such as personal address and department address/ manage personal business card information",Business Card Management,Provide function to manage personal business card information
+,주소록/명함록,"개인주소록, 부서주소록 등 이메일 주소를 그루핑하여 관리하는 기능을 제공함/개인의 명함에 대한 정보를 관리하는 기능을 제공함",주소록관리,egovframework.com.cop.adb,egovframework.com.cmm,"개인주소록, 부서주소록 등 이메일 주소를 그룹핑하여 관리하는 기능을 제공함","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMTNNCRD
+COMTNFILE
+COMTNFILEDETAIL
+COMTNADBKMANAGE
+COMTNADBK",3.6.0,Y,addedOptions,Address/ Business Card,"Compartmentize groups to manage, such as personal address and department address/ manage personal business card information",Address Management,"Provide functions to manage email address by groups such as personal address, department address, etc"
+,전자결재,"전자문서의 결재 처리에 필요한 상신, 승인, 반려, 회람 등의 일련의 업무를 지원하는 서비스를 정의함",약식결재,egovframework.com.uss.ion.ism,egovframework.com.cmm,"기안, 상신, 반려, 승인 등 약식 결재 기능을 제공함","COMTECOPSEQ
+COMTNINFRMLSANCTN
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Electronic Payment,"Define service that support tasks such as to report, authorize, return, or circulate, which are needed in electronic document's approval process",Informal Approval,"Provide informal approval function such as drafts, reports, returns, approvals, etc"
+,사용자관리,"특정 시스템을 사용하거나 관리하기 위한 사용자정보(ID, 비밀번호 등)를 관리하는 기능을 제공함",기업/사용자/회원관리,egovframework.com.uss.umt,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.sim,
+egovframework.com.sec.rnc,
+egovframework.com.sym.ccm.zip","-기업회원관리
+특정 시스템을 이용할 수 있는 기업회원의 가입 및 가입한 기업회원정보를 관리하는 기능을 제공함
+-사용자관리
+특정 시스템을 사용하거나 관리하기 위한 사용자정보(ID, 비밀번호 등)를 관리하는 기능을 제공함
+-회원관리
+특정 시스템을 이용할 수 있는 회원의 가입 및 가입한 회원의 정보를 관리하는 기능을 제공함","COMTECOPSEQ
+COMTCZIP
+COMTRDNMADRZIP
+COMTNSTPLATINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMTNFILE
+COMTNFILEDETAIL
+COMTHEMPLYRINFOCHANGEDTLS",3.6.0,Y,addedOptions,Corporation/User/Member Management,"Provide functions to manage user's information (ID, PW, etc) that are used to acess into specific systems",Corporation Member Management,"-Corporate Member Management
+Provide functions to manage corporate member's information and registration that approves access to specific systems
+-User Management
+Provide functions to manage user's information (ID, PW, etc) that are used to acess into specific systems
+-Member Management
+Provide functions to manage member's information and registration that approves access to specific systems"
+,개인화,사용자 인터페이스나 정보를 사용자가 원하는 형태에 따라제공함,마이페이지,egovframework.com.uss.mpe,egovframework.com.cmm,사용자 인터페이스나 정보를 사용자가 원하는 형태에 따라 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNINDVDLPGECNTNTS
+COMTNINDVDLPGEESTBS
+COMTNCNTNTSLIST",3.6.0,Y,addedOptions,Personalization,Provide user's interface or information in type of user's choice,My Page,Provide user's interface or information in type of user's choice
+,약관관리,회원가입에 따른 정보공유 동의여부 및 회원약관 동의여부를 확인하는 기능을 제공함,약관관리,egovframework.com.uss.sam.stp,egovframework.com.cmm,회원가입에 따른 정보공유 동의여부 및 회원약관 동의여부를 확인하는 기능을 제공함,"COMTECOPSEQ
+COMTNSTPLATINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Terms Management   ,Provide information sharing/member terms agreement according to member registration,Terms Management,Provide information sharing/member terms agreement according to member registration
+,약관관리,회원가입에 따른 정보공유 동의여부 및 회원약관 동의여부를 확인하는 기능을 제공함,저작권보호정책,egovframework.com.uss.sam.cpy,egovframework.com.cmm,저작권보호정책에 대한 내용과 동의여부를 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNCPYRHTINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Terms Management   ,Provide information sharing/member terms agreement according to member registration,Copyright Protection Policy,Provide copyright protection policy and manage agreement
+,약관관리/웹에디터(WYSIWYG),"회원가입에 따른 정보공유 동의여부 및 회원약관 동의여부를 확인하는 기능을 제공함
+-웹에디터(WYSIWYG) 포함",개인정보보호정책확인/웹에디터(WYSIWYG),egovframework.com.uss.sam.ipm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.wed,
+egovframework.com.uss.sam.ipm,
+egovframework.com.utl.wed.fiter","회원가입 및 이용안내 시 개인정보보호정책을 확인하는 기능을 제공함
+- 웹에디터(WYSIWYG) 컴포넌트 포함","COMTECOPSEQ
+COMTNINDVDLINFOPOLICY
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Terms Management   ,Provide information sharing/member terms agreement according to member registration,Privacy Agreement Confirm,"Provide function to get confirm from privacy agreement when member registration,information service happens"
+,온라인헬프,"많은 응용 프로그램에서 제공되는 도움 형식의 하나로, 응용 프로그램의 기능사용에 관한 설명이나 지시 사항을 제공하고 응용 프로그램 사용에 필요한 정보 제공 및 도움을 주는 일련의 서비스를 정의함",도움말,egovframework.com.uss.olh.hpc,egovframework.com.cmm,응용 프로그램 사용에 필요한 정보 및 도움말을 제공하는 기능을 제공함,"COMTECOPSEQ
+COMTNHPCMINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Online Help,"As one of many supporting forms provided by applications, it is a type of service that provides the direction and information to help understand the functions of a sepecific application",Help,Provide necessary information and helps when to use application
+,온라인헬프,"많은 응용 프로그램에서 제공되는 도움 형식의 하나로, 응용 프로그램의 기능사용에 관한 설명이나 지시 사항을 제공하고 응용 프로그램 사용에 필요한 정보 제공 및 도움을 주는 일련의 서비스를 정의함",용어사전,egovframework.com.uss.olh.wor,egovframework.com.cmm,용어사전을 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNWORDDICARYINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Online Help,"As one of many supporting forms provided by applications, it is a type of service that provides the direction and information to help understand the functions of a sepecific application",Glossary,Provide glossary management function
+,온라인헬프,"많은 응용 프로그램에서 제공되는 도움 형식의 하나로, 응용 프로그램의 기능사용에 관한 설명이나 지시 사항을 제공하고 응용 프로그램 사용에 필요한 정보 제공 및 도움을 주는 일련의 서비스를 정의함",FAQ관리,egovframework.com.uss.olh.faq,egovframework.com.cmm,자주하는 질문에 대한 답변을 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNFAQINFO",3.6.0,Y,addedOptions,Online Help,"As one of many supporting forms provided by applications, it is a type of service that provides the direction and information to help understand the functions of a sepecific application",FAQ Management,Provide function that manage answers of FAQ 
+,온라인헬프,"많은 응용 프로그램에서 제공되는 도움 형식의 하나로, 응용 프로그램의 기능사용에 관한 설명이나 지시 사항을 제공하고 응용 프로그램 사용에 필요한 정보 제공 및 도움을 주는 일련의 서비스를 정의함",Q&A관리,egovframework.com.uss.olh.qna,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.sim",질문과 답변 관리를 제공함,"COMTECOPSEQ
+COMTNQAINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Online Help,"As one of many supporting forms provided by applications, it is a type of service that provides the direction and information to help understand the functions of a sepecific application",Q&A Management,Provide Q&A management
+,온라인헬프,"많은 응용 프로그램에서 제공되는 도움 형식의 하나로, 응용 프로그램의 기능사용에 관한 설명이나 지시 사항을 제공하고 응용 프로그램 사용에 필요한 정보 제공 및 도움을 주는 일련의 서비스를 정의함",행정전문용어 사전관리,egovframework.com.uss.olh.awm,egovframework.com.cmm,행정전문용어사전 등록/검색 관리를 제공함,"COMTECOPSEQ
+COMTNADMINISTRATIONWORD
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Online Help,"As one of many supporting forms provided by applications, it is a type of service that provides the direction and information to help understand the functions of a sepecific application", Administrative Terminology Dictionary Management,Provide administrative terminology dictionary management register/search management function
+,온라인헬프,"많은 응용 프로그램에서 제공되는 도움 형식의 하나로, 응용 프로그램의 기능사용에 관한 설명이나 지시 사항을 제공하고 응용 프로그램 사용에 필요한 정보 제공 및 도움을 주는 일련의 서비스를 정의함",온라인매뉴얼,egovframework.com.uss.olh.omm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.wed",응용 프로그램의 온라인 매뉴얼을 등록하고 조회하는 기능을 제공함,"COMTECOPSEQ
+COMTNONLINEMANUAL
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Online Help,"As one of many supporting forms provided by applications, it is a type of service that provides the direction and information to help understand the functions of a sepecific application",Online Menual,Provide application's online manual register/search function 
+,온라인참여,"온라인 상으로 설문, 투표, 여론조사, 공청회, 의견수렴을 지원하는 서비스. 국민이 온라인 상에서 적극적으로 행정업무에 참여할 수 있는 서비스",상담관리,egovframework.com.uss.olp.cns,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.sim",상담 내용 및 답변을 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNCNSLTLIST
+COMTNQAINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Oline Participation,"Service that support active public participation administration through online survey,poll, and public hearings ",Consultation Management,Provide function that manage consultation contents and responses
+,온라인참여,"온라인 상으로 설문, 투표, 여론조사, 공청회, 의견수렴을 지원하는 서비스. 국민이 온라인 상에서 적극적으로 행정업무에 참여할 수 있는 서비스",항목관리,egovframework.com.uss.olp.qim,"egovframework.com.cmm,
+egovframework.com.uss.olp.qri,
+egovframework.com.uss.olp.qrm,
+egovframework.com.uss.olp.qmc,
+egovframework.com.uss.olp.qtm,
+egovframework.com.uss.olp.qqm,
+egovframework.com.sym.cal","설문조사 문항 중, 객관식 인 경우, 선택항목을 관리하는 기능을 제공함","COMTECOPSEQ
+COMTNCNSLTLIST
+COMTNQAINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Oline Participation,"Service that support active public participation administration through online survey,poll, and public hearings ",Item Management,Provide functions to manage choices when the survey is consisted with multiple choice questions
+,온라인참여,"온라인 상으로 설문, 투표, 여론조사, 공청회, 의견수렴을 지원하는 서비스. 국민이 온라인 상에서 적극적으로 행정업무에 참여할 수 있는 서비스",설문관리,egovframework.com.uss.olp.qmc,"egovframework.com.cmm,
+egovframework.com.uss.olp.qri,
+egovframework.com.uss.olp.qrm,
+egovframework.com.uss.olp.qtm,
+egovframework.com.uss.olp.qqm,
+egovframework.com.uss.olp.qim,
+egovframework.com.sym.cal","설문조사를 위한 기본 정보를 관리하는 기능을 제공함(설문제목, 시작일자/종료일자, 설문조사대상, 응답내용 등)","COMTECOPSEQ
+COMTNCNSLTLIST
+COMTNQAINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Oline Participation,"Service that support active public participation administration through online survey,poll, and public hearings ",Survey Management,"
+Provide function to manage basic information to questionnaire
+(Questionnaire title, start date / end date, the survey targets, responses, etc.)"
+,온라인참여,"온라인 상으로 설문, 투표, 여론조사, 공청회, 의견수렴을 지원하는 서비스. 국민이 온라인 상에서 적극적으로 행정업무에 참여할 수 있는 서비스",질문관리,egovframework.com.uss.olp.qqm,"egovframework.com.cmm,
+egovframework.com.uss.olp.qri,
+egovframework.com.uss.olp.qrm,
+egovframework.com.uss.olp.qmc,
+egovframework.com.uss.olp.qtm,
+egovframework.com.uss.olp.qim,
+egovframework.com.sym.cal",설문조사의 각 문항을 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNCNSLTLIST
+COMTNQAINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Oline Participation,"Service that support active public participation administration through online survey,poll, and public hearings ",Question Management,"
+Provide functions to manage each questions of the survey
+"
+,온라인참여,"온라인 상으로 설문, 투표, 여론조사, 공청회, 의견수렴을 지원하는 서비스. 국민이 온라인 상에서 적극적으로 행정업무에 참여할 수 있는 서비스",설문조사,egovframework.com.uss.olp.qri,"egovframework.com.cmm,
+egovframework.com.uss.olp.qrm,
+egovframework.com.uss.olp.qmc,
+egovframework.com.uss.olp.qtm,
+egovframework.com.uss.olp.qqm,
+egovframework.com.uss.olp.qim,
+egovframework.com.sym.cal","설문조사 질문 중, 객관식/주관식 질문에 대한 답변기능을 제공함","COMTECOPSEQ
+COMTNCNSLTLIST
+COMTNQAINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Oline Participation,"Service that support active public participation administration through online survey,poll, and public hearings ",Survey Management,Provide answering functions of multiple choice/ short answer questions in the survey
+,온라인참여,"온라인 상으로 설문, 투표, 여론조사, 공청회, 의견수렴을 지원하는 서비스. 국민이 온라인 상에서 적극적으로 행정업무에 참여할 수 있는 서비스",응답자관리,egovframework.com.uss.olp.qrm,"egovframework.com.cmm,
+egovframework.com.uss.olp.qri,
+egovframework.com.uss.olp.qmc,
+egovframework.com.uss.olp.qtm,
+egovframework.com.uss.olp.qqm,
+egovframework.com.uss.olp.qim,
+egovframework.com.sym.cal",설문조사에 응한 답변자의 정보를 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNCNSLTLIST
+COMTNQAINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Oline Participation,"Service that support active public participation administration through online survey,poll, and public hearings ",Participant Management,Provide functions to manage participant's information of the survey
+,온라인참여,"온라인 상으로 설문, 투표, 여론조사, 공청회, 의견수렴을 지원하는 서비스. 국민이 온라인 상에서 적극적으로 행정업무에 참여할 수 있는 서비스",설문템플릿관리,egovframework.com.uss.olp.qtm,"egovframework.com.cmm,
+egovframework.com.uss.olp.qri,
+egovframework.com.uss.olp.qrm,
+egovframework.com.uss.olp.qmc,
+egovframework.com.uss.olp.qqm,
+egovframework.com.uss.olp.qim,
+egovframework.com.sym.cal",설문문항 유형 및 질문/답변형식을 생성/수정 배포 할 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNQUSTNRTMPLAT
+COMTNQESTNRINFO
+COMTNQUSTNRRESPONDINFO
+COMTNQUSTNRQESITM
+COMTNQUSTNRRSPNSRESULT
+COMTNQUSTNRIEM",3.6.0,Y,addedOptions,Oline Participation,"Service that support active public participation administration through online survey,poll, and public hearings ",Survey Template Management,Provide functions to create/edit questions/answering formats of the survey and to distribute them 
+,온라인참여,"온라인 상으로 설문, 투표, 여론조사, 공청회, 의견수렴을 지원하는 서비스. 국민이 온라인 상에서 적극적으로 행정업무에 참여할 수 있는 서비스",회의관리,egovframework.com.uss.olp.mgt,"egovframework.com.cmm,
+egovframework.com.sym.cal",회의안건 및 회차별 회의결과를 기록하고 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTNMTGINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Oline Participation,"Service that support active public participation administration through online survey,poll, and public hearings ",     Meeting Management,Provide functions to manage and record conference items and their conclusions
+,온라인참여,"온라인 상으로 설문, 투표, 여론조사, 공청회, 의견수렴을 지원하는 서비스. 국민이 온라인 상에서 적극적으로 행정업무에 참여할 수 있는 서비스",온라인poll관리,egovframework.com.uss.olp.opm,"egovframework.com.cmm,
+egovframework.com.uss.olp.opp,
+egovframework.com.uss.olp.opr,
+egovframework.com.sym.cal",관리자가 설정한 특정 주제에 대해 찬반에 대한 투표관리를 할 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNONLINEPOLLMANAGE
+COMTNONLINEPOLLIEM
+COMTNONLINEPOLLRESULT",3.6.0,Y,addedOptions,Oline Participation,"                                                             Service that support active public participation administration through online survey,poll, and public hearings ",Online Poll Management,Provide functions to manage the yes-or-no poll on specific topic set by the manager
+,온라인참여,"온라인 상으로 설문, 투표, 여론조사, 공청회, 의견수렴을 지원하는 서비스. 국민이 온라인 상에서 적극적으로 행정업무에 참여할 수 있는 서비스",온라인poll결과,egovframework.com.uss.olp.opr,"egovframework.com.cmm,
+egovframework.com.uss.olp.opp,
+egovframework.com.uss.olp.opm,
+egovframework.com.sym.cal",관리자가 설정한 특정 주제에 대해 찬반에 대한 투표결과를 확인 할 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNONLINEPOLLMANAGE
+COMTNONLINEPOLLIEM
+COMTNONLINEPOLLRESULT",3.6.0,Y,addedOptions,Oline Participation,"Service that support active public participation administration through online survey,poll, and public hearings",   Online Poll Result ,Provide functions to manage the yes-or-no poll on specific topic set by the manager
+,온라인참여,"온라인 상으로 설문, 투표, 여론조사, 공청회, 의견수렴을 지원하는 서비스. 국민이 온라인 상에서 적극적으로 행정업무에 참여할 수 있는 서비스",온라인poll참여,egovframework.com.uss.olp.opp,"egovframework.com.cmm,
+egovframework.com.uss.olp.opm,
+egovframework.com.uss.olp.opr,
+egovframework.com.sym.cal",관리자가 설정한 특정 주제에 대해 찬반에 대한 투표참여 할 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNONLINEPOLLMANAGE
+COMTNONLINEPOLLIEM
+COMTNONLINEPOLLRESULT",3.6.0,Y,addedOptions,Oline Participation,"Service that support active public participation administration through online survey,poll, and public hearings",    Online Poll Participation,Provide functions to manage the yes-or-no poll on specific topic set by the manager
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",뉴스관리,egovframework.com.uss.ion.nws,"egovframework.com.cmm,
+egovframework.com.sym.cal",사용자에게 뉴스정보를 게시판 형태로 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNNEWSINFO",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",News Management,Provide news information in bbs type to the user 
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",사이트관리,egovframework.com.uss.ion.sit,egovframework.com.cmm,"사이트링크, 사이트정보, 사이트맵, 관련사이트, 추천사이트를 관리하는 기능을 제공함","COMTECOPSEQ
+COMTNSITELIST
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",  Site Management,"Provide function that manage site link, site information, site map, related site, recommended sites"
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",추천사이트관리,egovframework.com.uss.ion.rec,"egovframework.com.cmm,
+egovframework.com.sym.cal",개인 추천 웹사이트관리 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTNRECOMENDSITEINFO
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",   Recommended Site Management,Provide function that manage personal recommend web site
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",행사/이벤트/캠페인,egovframework.com.uss.ion.ecc,"egovframework.com.cmm,
+egovframework.com.sym.cal","행사, 이벤트, 캠페인 일정 및 내용을 관리하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNEVENTINFO
+COMTNEXTRLHRINFO",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",   Celebration/ Events / Campaigns,Provide funtions that manage celebration/ events / campaigns schedule and content
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",팝업창관리,egovframework.com.uss.ion.pwm,"egovframework.com.cmm,
+egovframework.com.sym.cal",관리자가 초기화면에 나타날 팝업창을 등록하고 사용자가 접속하면 나타나게 하는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTNPOPUPMANAGE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Pop-up Management,Provide function that show pop-up window when user accesses which administrator register to show at first screen
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",정보알림이,egovframework.com.uss.ion.noi,"egovframework.com.cmm,
+egovframework.com.sym.cal",관리자가 등록한 메시지를 사용자에게 알려주는 알림서비스 기능을 제공함,"COMTECOPSEQ
+COMTNNTFCINFO
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",   Information Alerts,Provide function that alert user when manager registers message
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",배너관리,egovframework.com.uss.ion.bnr,egovframework.com.cmm,배너이미지를 등록하면 메인화면에 반영되어 링크된 사이트로 이동하는 기능을 제공함,"COMTECOPSEQ
+COMTNBANNER
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users", Banner Management,Provide functions to apply banner image to main page in order to link the image to specific sites
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",로그인화면이미지관리,egovframework.com.uss.ion.lsi,egovframework.com.cmm,로그인화면에 대한 이미지를 등록하고 등록한 이미지가 로그인 화면에 출력되는 기능을 제공함,"COMTECOPSEQ
+COMTNLOGINSCRINIMAGE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users", Login Page Image Management,Provide function that register login page images and show it on the screen 
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",최근검색어 조회,egovframework.com.uss.ion.rsm,egovframework.com.cmm,검색창에서 최근 검색한 검색어를 리스트로 보여주는 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNRECENTSRCHWRDMANAGE
+COMTNRECENTSRCHWRD",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users", Recent Search Word Inquiry,Provide function that shows list of search word which searched recently
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",메인이미지관리,egovframework.com.uss.ion.msi,egovframework.com.cmm,메인화면에 보여지는 이미지를 등록하여 메인화면에 출력하는 기능을 제공함,"COMTECOPSEQ
+COMTNMAINIMAGE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",   Main Image Management,Provide function that register the images shown on the main screen and show main screen
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",통합링크관리,egovframework.com.uss.ion.ulm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.wed",링크 사이트에 대한 통합링크 기능을 제공함,"COMTECOPSEQ
+COMTNUNITYLINK
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",    Link Intergration Management ,Provide function that intergrate link about link sites   
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",사용자부재관리,egovframework.com.uss.ion.uas,egovframework.com.cmm,사용자 부재여부를 등록하여 해당 사용자가 부재중인지 여부를 조회하는 기능을 제공함,"COMTECOPSEQ
+COMTNUSERABSNCE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",   User Absence Management, Provide function that register user's absence to let other users to inquire 
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",인터넷서비스안내 및 관리,egovframework.com.uss.ion.isg,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.wed",인터넷으로 서비스하는 정보를 등록 관리하여 해당 서비스 안내 정보가 웹페이지에 보여지게 하는 기능을 제공함,"COMTECOPSEQ
+COMTNINTNETSVC
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Internet Service Information and Management,Provide function that registration and management information services by internet which information shows webpage
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",Wiki기능,egovframework.com.uss.ion.wik.bmk,egovframework.com.cmm,"오픈소스 Wiki를 활용한 가이드 작성 및 관리 기능을 제공함
+(소스받아서 설치하며, 이패키지는 위키북마크임)","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNTWITTER
+COMTNWIKIBKMK",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Wiki Function,"Provide function that write or management guide which used opensource Wiki
+(Install after downloading source and this package is Wiki bookmark)"
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",RSS태그서비스,egovframework.com.uss.ion.rsn,"egovframework.com.cmm,
+egovframework.com.uss.ion.rss",웹2.0의 RSS 태그를 서비스하는 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNRSS",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",RSS Tag service,Provide function that perform web 2.0's tag
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",RSS태그관리,egovframework.com.uss.ion.rss,"egovframework.com.cmm,
+egovframework.com.uss.ion.rsn",웹2.0의 RSS 태그를 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNRSS
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",RSS Tag Management,Provide function that manage web 2.0's tag
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",Twitter연동,egovframework.com.uss.ion.tir,egovframework.com.cmm,소셜 네트워크 서비스(Social Network Service；SNS)를 위한 Twitter 서비스 연동기능 제공함 ,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNTWITTER",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Twitter Linkage,Provide Twitter interworking service for SNS  
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",쪽지관리,egovframework.com.uss.ion.ntm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.wed",작성한 메시지를 선택한 상대방에게 쪽지로 보내는 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNNOTE
+COMTNNOTETRNSMIT
+COMTNNOTERECPTN",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",    Message Management,Provide function that send written message to he/she
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",받은쪽지함관리,egovframework.com.uss.ion.ntr,"egovframework.com.cmm,
+egovframework.com.uss.ion.nts,
+egovframework.com.sym.cal",수신한 쪽지를 보관하고 조회할 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNNOTE
+COMTNNOTETRNSMIT
+COMTNNOTERECPTN",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Sent Message Manager,Provide function that can custody and inquiry received message
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",보낸쪽지함관리,egovframework.com.uss.ion.nts,"egovframework.com.cmm,
+egovframework.com.sym.cal",송신한 쪽지를 보관하고 조회할 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNNOTE
+COMTNNOTETRNSMIT
+COMTNNOTERECPTN",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Recieved Message Manager,"Provide function that can custody and inquiry transmitted message
+"
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",회의실관리,egovframework.com.uss.ion.mtg,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal","-회의실관리
+기관내의 회의실위치, 개방시간, 수용인원, 비치물품 등 회의실에 대한 정보를 관리하는 기능을 제공함
+-회의실 예약 관리
+회의실을 예약, 관리하는 기능을 제공함","COMTNRESTDE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNMTGPLACEMANAGE
+COMTNFXTRSMANAGE
+COMTNMTGPLACEFXTRS
+COMTNMTGPLACERESVE",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Meeting Room Management,"-Meeting Room Management
+
+Provide function that manage information about in-house meeting room's location, open hours, seating capacity,goods
+
+-Meeting Room Reservation Management
+
+Provide function to make reservation and manage meeting room "
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",직원경조사관리,egovframework.com.uss.ion.ctn,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.uss.ion.ism,
+egovframework.com.sym.cal","기관내 직원 경조사를 관리하는 기능으로 내부 회원(인사)정보를 연계하여 기관내 직원 경조사 등록, 검색 기능을 제공함","COMTECOPSEQ
+COMTNCTSNNMANAGE
+COMTNINFRMLSANCTN
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Employee Family Event Management,"Funtion that manage in-house employee's family events , which connects in-house employees information so through this function you can register/search in-house employee's family events "
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",휴가관리,egovframework.com.uss.ion.vct,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.uss.ion.ism,
+egovframework.com.sym.cal",사용자 정보를 연계하여 사용자의 휴가사용 내용에 대한 정보를 관리하고 검색하는 기능을 제공함,"COMTECOPSEQ
+COMTNINFRMLSANCTN
+COMTNVCATNMANAGE
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNTWITTER
+COMTNINDVDLYRYCMANAGE",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Vacation Management,"사용자 정보를 연계하여 사용자의 휴가사용 내용에 대한 정보를 관리하고 검색하는 기능을 제공함
+Provide function that management and search user's vacation usage contacting with user information"
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",당직관리,egovframework.com.uss.ion.bnt,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.uss.ion.ism",당직(일직/숙직) 정보를 등록 관리하여 조회하는 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",  Duty Management,Provide function that inquire duty(day duty/night duty) information by register and manage duty information 
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",포상관리,egovframework.com.uss.ion.rwd,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.uss.ion.ism,
+egovframework.com.sym.cal","기관내 포상관리를 지원하는 기능으로 내부 회원(인사)정보를 연계하여 포상등록, 신청, 검색 기능을 제공함","COMTECOPSEQ
+COMTNRWARDMANAGE
+COMTNINFRMLSANCTN
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Compensation,"Provide function that supporting organization's reward management like reward register, apply, search contacting with inner member"
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",기념일관리,egovframework.com.uss.ion.ans,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal","사용자정보와 연계하여 사용자의 생일, 결혼기념일 등에 해당 내용을 알려주는 기능을 제공함","COMTECOPSEQ
+COMTNANNVRSRYMANAGE
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Anniversary Management,Provide function to alert user with information such as the user's birth date or marriage date by connecting to user's information
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",행사신청관리,egovframework.com.uss.ion.evt,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.uss.ion.ism,
+egovframework.com.sym.cal","-행사신청관리
+                                                                                                                                                                                                                                                                교육, 세미나 등 이벤트나 행사에 참여를 신청하는 기능을 제공함
+-행사접수관리
+                                                                                                                                                                                                                                                                교육, 세미나 등의 참여 신청을 접수하고 참석을 승인하는 기능을 제공함","COMTECOPSEQ
+COMTNINFRMLSANCTN
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNEVENTMANAGE
+COMTNEVENTATDRN",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users","
+Event Application Management","-Event Application Management
+                                                                                                                                                                                                                                                             Provide function to apply for education,seminar..etc events
+
+- Event Receipt Management
+                                                                                                                                                                                                                                                               
+Receive application for events, and give attend approval"
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",사이트맵,egovframework.com.sym.mnu.stm,"egovframework.com.cmm,
+egovframework.com.cop.ems,
+egovframework.com.sym.mnu.bmm,
+egovframework.com.sym.mnu.mcm,
+egovframework.com.sym.mnu.mpm,
+egovframework.com.sym.prm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.sim,
+egovframework.com.sym.cal,
+egovframework.com.sym.ccm.zip,
+egovframework.com.utl.wed",사용자들이 원하는 것을 쉽게 찾을 수 있도록 웹사이트맵 기능을 제공함,"COMTECOPSEQ
+COMTNINFRMLSANCTN
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNEVENTMANAGE
+COMTNEVENTATDRN",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",Site Map,Provide web site map function that helps to find information easily 
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",페이스북 연동,egovframework.com.uss.ion.fbk,"egovframework.com.cmm,
+egovframework.com.ext.oauth,
+egovframework.com.uat.uia,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.uss.umt,
+egovframework.com.utl.sim,
+egovframework.com.sec.rnc,
+egovframework.com.sym.ccm","Facebook 연동은 시스템에서 facebook에 담벼락, 앨범, 프로필 조회 등의 기본 기능을 제공",UserConnection,3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",FacebookLinkage,"Facebook provides the basic functions, such as linkage wall on facebook, albums, Profile viewed by the system"
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",위치정보기반 지도서비스연계,egovframework.com.uss.ion.rmm,egovframework.com.cmm,DaumAPI를 활용한 약도를 저장하고 관리,COMTNROUGHMAP,3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",RoughMap,Store and manage Directions utilizing DaumAPI
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",개인연차 관리,egovframework.com.uss.ion.yrc,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.utl.sim,
+egovframework.com.uat.uia","개인연차관리는 시스템에서 개인의 연차정보를 관리하는 기능으로 연차 조회, 등록, 수정하는 기능을 제공","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMTNFILE
+COMTNFILEDETAIL
+COMTHEMAILDSPTCHMANAGE
+COMTNINDVDLYRYCMANAGE",3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",IndvdlYrycManage,"Individual annual management provides a general inquiry, registration, modification, which features the ability to manage the general information of the individuals in the system"
+,정보제공/알림,"사용자에게 제공되는 정보의 처리를 지원하기 위한 기능으로서 통계관리, 리포팅, 검색, 실시간정보관리 등이 해당",출퇴근관리,egovframework.com.uss.cmt,"egovframework.com.cmm,
+egovframework.com.utl.fcc",출퇴근관리는 로그인한 사용자와 Device 연계를 통해 출퇴근 및 근태를 관리하는 기능을 제공,COMTNCOMMUTE,3.6.0,Y,addedOptions,Information Provision/ Notification ,"Functions, such as statistic management, reportings, browsing and real time information magement support the process of information provided to users",CmtManage,Commuting management provides the ability to manage the rush and attendance through the logged-in user and Device links
+,공통코드관리,정보시스템에 공통으로 사용되는 표준 코드 정보에 대한 등록과 버전을 관리 하는 서비스를 정의함,공통코드,egovframework.com.sym.ccm.cca,"egovframework.com.cmm,
+egovframework.com.sym.ccm.cde,
+egovframework.com.sym.ccm.ccc",공통코드를 관리하는 기능을 제공함,COMTNCOMMUTE,3.6.0,Y,addedOptions,Common Code Management,Defines the service that registers and updates standard code information that is universally used in information systems,Common Code,Provide function to manage common code 
+,공통코드관리,정보시스템에 공통으로 사용되는 표준 코드 정보에 대한 등록과 버전을 관리 하는 서비스를 정의함,공통분류코드,egovframework.com.sym.ccm.ccc,"egovframework.com.cmm,
+egovframework.com.sym.ccm.cca,
+egovframework.com.sym.ccm.cde",공통코드의 그룹을 대표하는 공통분류코드를 관리하는 기능을 제공함,COMTNCOMMUTE,3.6.0,Y,addedOptions,Common Code Management,Defines the service that registers and updates standard code information that is universally used in information systems,Common Categorization Code,Provide function to manage common categorization code that represent the group
+,공통코드관리,정보시스템에 공통으로 사용되는 표준 코드 정보에 대한 등록과 버전을 관리 하는 서비스를 정의함,공통상세코드,egovframework.com.sym.ccm.cde,"egovframework.com.cmm,
+egovframework.com.sym.ccm.cca,
+egovframework.com.sym.ccm.ccc",공통분류코드에 대한 상세코드를 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Common Code Management,Defines the service that registers and updates standard code information that is universally used in information systems,Common Detail Code,Provide function to manage detailed code of commonly categorized codes
+,공통코드관리,정보시스템에 공통으로 사용되는 표준 코드 정보에 대한 등록과 버전을 관리 하는 서비스를 정의함,우편번호 주소찾기,egovframework.com.sym.ccm.zip,egovframework.com.cmm,"-우편번호주소찾기
+우편번호를 선택하여 주소를 입력하는 기능을 제공함
+-우편번호관리
+우편번호 정보를 관리하는 기능을 제공함","COMTCZIP
+COMTRDNMADRZIP
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Common Code Management,Defines the service that registers and updates standard code information that is universally used in information systems,Finding Zip Code,"-Finding Zip Code Address
+Provide funcion that insert address when select zip code
+-Zip code management
+Provide function that management zip code information"
+,공통코드관리,정보시스템에 공통으로 사용되는 표준 코드 정보에 대한 등록과 버전을 관리 하는 서비스를 정의함,행정동 코드관리,egovframework.com.sym.ccm.acr,"egovframework.com.cmm,
+egovframework.com.sym.ccm.adc,
+egovframework.com.sym.cal",행정코드(법정동)를 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCADMINISTCODE
+COMTCADMINISTCODERECPTNLOG
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Common Code Management,Defines the service that registers and updates standard code information that is universally used in information systems, Administration Code Management,Provide functions that manage administrative(administration) code 
+,공통코드관리,정보시스템에 공통으로 사용되는 표준 코드 정보에 대한 등록과 버전을 관리 하는 서비스를 정의함,법정동 코드관리,egovframework.com.sym.ccm.adc,"egovframework.com.cmm,
+egovframework.com.sym.ccm.acr,
+egovframework.com.sym.cal",행정코드(행정동)를 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCADMINISTCODE
+COMTCADMINISTCODERECPTNLOG
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Common Code Management,Defines the service that registers and updates standard code information that is universally used in information systems,Court Code Management,Provide functions that manage administrative(court) code 
+,공통코드관리,정보시스템에 공통으로 사용되는 표준 코드 정보에 대한 등록과 버전을 관리 하는 서비스를 정의함,기관코드수신,egovframework.com.sym.ccm.icr,egovframework.com.cmm,행정표준코드관리시스템으로부터 기관코드를 수신하는 인터페이스 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNINSTTCODE
+COMTNINSTTCODERECPTNLOG",3.6.0,Y,addedOptions,Common Code Management,Defines the service that registers and updates standard code information that is universally used in information systems,Receive Institutions Code ,Provide interface function that receive institutions code from administrative standard code management system
+,공통코드관리,정보시스템에 공통으로 사용되는 표준 코드 정보에 대한 등록과 버전을 관리 하는 서비스를 정의함,도로명주소관리,egovframework.com.sym.adr,"egovframework.com.cmm,
+egovframework.com.sym.cal",도로명주소 안내시스템에서 제공하는 Open API 기반의 주소정보연계 서비스를 이용하여 도로명 주소를 조회하는 기능을 제공,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNINSTTCODE
+COMTNINSTTCODERECPTNLOG",3.6.0,Y,addedOptions,Common Code Management,Defines the service that registers and updates standard code information that is universally used in information systems,AdressCntc,Provides the ability to display the road name address by using the Open API based on the address information provided by the road name address associated service guide system
+,로그관리,"시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함",로그관리,egovframework.com.sym.log.lgm,"egovframework.com.cmm,
+egovframework.com.sym.cal","시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTNSYSLOG
+COMTSSYSLOGSUMMARY
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Log Management,Provide functions to conditionally browse log events during system operation and to view them,Log Management,Provide functions to conditionally browse log events during system operation and to view them
+,로그관리,"시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함",사용로그관리,egovframework.com.sym.log.ulg,"egovframework.com.cmm,
+egovframework.com.sym.cal","시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTNSYSLOG
+COMTNUSERLOG
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Log Management,Provide function to conditionally browse and view logs during system operation,Usage Log Management,Provide functions to conditionally browse log events during system operation and to view them
+,로그관리,"시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함",송/수신로그관리,egovframework.com.sym.log.tlg,"egovframework.com.cmm,
+egovframework.com.utl.sys.trm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal","시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함","COMTECOPSEQ
+COMTNCNTCINSTT
+COMTNCNTCSERVICE
+COMTNCNTCSYSTEM
+COMTNSYSTEMCNTC
+COMTNTRSMRCVMNTRNG
+COMTNRESTDE
+COMTNTRSMRCVLOG
+COMTSTRSMRCVLOGSUMMARY
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTHTRSMRCVMNTRNGLOGINFO",3.6.0,Y,addedOptions,Log Management,Provide functions to conditionally browse log events during system operation and to view them,Transmit / Receive Log Management,Provide functions to conditionally browse log events during system operation and to view them
+,로그관리,"시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함",시스템이력관리,egovframework.com.sym.log.slg,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal","시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTHSYSHIST
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Log Management,Provide functions to conditionally browse log events during system operation and to view them,System History Management,Provide function to conditionally browse and view logs during system operation
+,로그관리,"시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함",웹로그관리,egovframework.com.sym.log.wlg,"egovframework.com.cmm,
+egovframework.com.sym.cal","시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTNWEBLOG
+COMTSWEBLOGSUMMARY
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Log Management,Provide function to conditionally browse and view logs during system operation, Web Log Management,Provide functions to conditionally browse log events during system operation and to view them
+,로그관리,"시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함",접속로그관리,egovframework.com.sym.log.clg,"egovframework.com.cmm,
+egovframework.com.sym.cal,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.utl.sim,
+egovframework.com.uat.uia","시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTNLOGINLOG
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTHEMAILDSPTCHMANAGE",3.6.0,Y,addedOptions,Log Management,Provide functions to conditionally browse log events during system operation and to view them,Connection Log Management,Provide functions to conditionally browse log events during system operation and to view them
+,로그관리,"시스템 운영 시 발생한 각종 로그내용을 특정 조건으로 검색하고, 검색된 내용을 선택하여 조회하는 기능을 제공함",개인정보 조회 로그,egovframework.com.sym.log.plg,"egovframework.com.cmm,
+egovframework.com.sec.ram","개인정보조회 로그관리는 사용자가 개인정보를 조회한 로그 정보를 검색, 조회하는 기능을 제공",COMTNPRIVACYLOG,3.6.0,Y,addedOptions,Log Management,Provide functions to conditionally browse log events during system operation and to view them,PrivacyQueryLog,"Personal information query log management provides the ability to search the log information users who visited the personal information, the query"
+,메뉴관리,메뉴를 생성하고 메뉴에 해당하는 화면을 나타나게 하는 관리기능을 제공함,바로가기 메뉴관리,egovframework.com.sym.mnu.bmm,"egovframework.com.cmm,
+egovframework.com.cop.ems,
+egovframework.com.sym.mnu.mcm,
+egovframework.com.sym.mnu.mpm,
+egovframework.com.sym.mnu.stm,
+egovframework.com.sym.prm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.sim,
+egovframework.com.sym.cal,
+egovframework.com.sym.ccm.zip,
+egovframework.com.utl.wed",자주쓰는 메뉴에 대해 바로가기 메뉴로 등록하여 바로 찾아 갈 수 있는 기능을 제공함,COMTNPRIVACYLOG,3.6.0,Y,addedOptions,Menu Management,Provide management skill that generate menu and show it on the screen ,    Short Cut Menu Management, Register frequently used menu to the short cut menu 
+,메뉴관리,메뉴를 생성하고 메뉴에 해당하는 화면을 나타나게 하는 관리기능을 제공함,메뉴생성관리,egovframework.com.sym.mnu.mcm,"egovframework.com.cmm,
+egovframework.com.cop.ems,
+egovframework.com.sym.mnu.bmm,
+egovframework.com.sym.mnu.mpm,
+egovframework.com.sym.mnu.stm,
+egovframework.com.sym.prm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.sim,
+egovframework.com.sym.cal,
+egovframework.com.sym.ccm.zip,
+egovframework.com.utl.wed",사용자 권한에 따라서 사용자 메뉴를 생성하는 기능을 제공함,COMTNPRIVACYLOG,3.6.0,Y,addedOptions,Menu Management,Provide management function that generate menu and show it on the screen ,Menu Creation Management,Provide user menu creation skill by user's authority 
+,메뉴관리,메뉴를 생성하고 메뉴에 해당하는 화면을 나타나게 하는 관리기능을 제공함,메뉴관리,egovframework.com.sym.mnu.mpm,"egovframework.com.cmm,
+egovframework.com.cop.ems,
+egovframework.com.sym.mnu.bmm,
+egovframework.com.sym.mnu.mcm,
+egovframework.com.sym.mnu.stm,
+egovframework.com.sym.prm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.sim,
+egovframework.com.sym.cal,
+egovframework.com.sym.ccm.zip,
+egovframework.com.utl.wed",메뉴를 생성하고 메뉴에 해당하는 화면을 나타나게 하는 관리기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTNRESTDE
+COMTCZIP
+COMTRDNMADRZIP
+COMTNBKMKMENUMANAGERESULT
+COMTNEMPLYRSCRTYESTBS
+COMTNSIEMAP
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNAUTHORINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNPROGRMLIST
+COMTHPROGRMCHANGEDTLS
+COMTNMENUINFO
+COMTNSITEMAP
+COMTNMENUCREATDTLS
+COMTHEMAILDSPTCHMANAGE",3.6.0,Y,addedOptions,Menu Management,Provide management function that generate menu and show it on the screen ,Menu Management,Provide management skill that generate menu and show it on the screen
+,프로그램관리,프로그램관리 기능을 제공함,프로그램관리,egovframework.com.sym.prm,"egovframework.com.cmm,
+egovframework.com.cop.ems,
+egovframework.com.sym.mnu.bmm,
+egovframework.com.sym.mnu.mcm,
+egovframework.com.sym.mnu.mpm,
+egovframework.com.sym.mnu.stm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.sim,
+egovframework.com.sym.cal,
+egovframework.com.sym.ccm.zip,
+egovframework.com.utl.wed","프로그램 관리(등록,수정,삭제) 기능을 제공함","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTNRESTDE
+COMTCZIP
+COMTRDNMADRZIP
+COMTNBKMKMENUMANAGERESULT
+COMTNEMPLYRSCRTYESTBS
+COMTNSIEMAP
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNAUTHORINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNPROGRMLIST
+COMTHPROGRMCHANGEDTLS
+COMTNMENUINFO
+COMTNSITEMAP
+COMTNMENUCREATDTLS
+COMTHEMAILDSPTCHMANAGE",3.6.0,Y,addedOptions,Program Management,Provide function that manage program ,Program management,"Provide function that manage program(register,update,delete)"
+,배치관리,시스템에서 실행되는 배치작업을 등록하여 스케줄처리기능에서 등록된 배치작업을 실행할 수 있도록 하는 기능을 제공함,배치작업관리,egovframework.com.sym.bat,"egovframework.com.cmm,
+egovframework.com.sym.cal","-배치작업관리
+시스템에서 실행되는 배치작업을 등록하여 스케줄처리 기능에서 등록된 배치작업을 실행할 수 있도록 하는 기능을 제공함 
+-배치결과관리
+스케줄처리 기능에 의해 처리된 배치작업의 결과를 등록하고 조회하는 기능을 제공함
+-스케줄처리
+배치작업을 실행하기 위한 작업주기, 방식 등의 작업 스케쥴을 관리하는 기능을 제공함
+","COMTECOPSEQ
+COMTNBATCHOPERT
+COMTNBATCHRESULT
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNBATCHSCHDUL
+COMTNBATCHSCHDULDFK",3.6.0,Y,addedOptions,Batch Management,Register the batch work executed on system to proceed batch work registered at schedule handling function ,Batch Work Management,"-  Batch Work Management
+Provide function that proceed batch work(which is registered at schedule handling function) by register batch work run on system
+- Batch Result Management
+Provide function that register and inquire batch work result made by schedule handling function
+- Process Schedule
+Provide function that manage work schedule such as work cycle, method to proceed batch work 
+"
+,시스템관리,"시스템 관리, 네트워크의 사용량, 부하를 모니터링하고, 기관의 다양한 서버를 관리 및 백업을 지원하는 서비스",백업관리,egovframework.com.sym.sym.bak,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.utl.sim,
+egovframework.com.sym.cal","시스템 백업 시 주기와 일시, 위치 등을 관리하는 기능을 제공함","COMTECOPSEQ
+COMTNBACKUPRESULT
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNBACKUPOPERT
+COMTNBACKUPSCHDULDFK",3.6.0,Y,addedOptions,System Management,"Monitoring system management, network usage quantity, load and supporting management and backup for a variety of organizations",Backup Management,"Provide cycle, data and time, location management function when backup system"
+,시스템관리,"시스템 관리, 네트워크의 사용량, 부하를 모니터링하고, 기관의 다양한 서버를 관리 및 백업을 지원하는 서비스",네트워크관리,egovframework.com.sym.sym.nwk,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal",서버자원이나 사용자 등에게 할당하기 위한 IP 등의 네트워크 정보를 관리하는 기능을 제공함 ,"COMTECOPSEQ
+COMTNNTWRKINFO
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,System Management,"Monitoring system management, network usage quantity, load and supporting management and backup for a variety of organizations",Network Management,Provide network information management function to assignment server resource or user
+,시스템관리,"시스템 관리, 네트워크의 사용량, 부하를 모니터링하고, 기관의 다양한 서버를 관리 및 백업을 지원하는 서비스",서버정보관리,egovframework.com.sym.sym.srv,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal","웹서버, WAS서버, DB서버 등 시스템을 구성하는 서버의 정보를 관리하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSERVEREQPMNINFO
+COMTNSYNCHRNSERVERINFO
+COMTNSERVERINFO
+COMTNSERVEREQPMNRELATE",3.6.0,Y,addedOptions,System Management,"Monitoring system management, network usage quantity, load and supporting management and backup for a variety of organizations",Server Information Management,"Provide management function that composite system like web server, WAS server, DB server"
+,장애관리,"소프트웨어, 하드웨어, 데이터베이스, 네트워크 등 관리 대상 정보자원의 고장 및 서비스 불능 상태 등 장애 여부를 관찰, 진단, 보고, 제어, 처리하는 일련의 작업으로서 통상 백업/복구/재해처리 등의 서비스를 정의함",장애신청관리,egovframework.com.sym.tbm.tbr,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal",시스템 장애발생 시 장애내역을 등록하고 처리를 요청하는 기능을 제공함,"COMTECOPSEQ
+COMTNTROBLINFO
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Trouble Management,"Software, hardware, database, network, and failure of the managed information resources and services, such disability is out of observation, diagnosis, report, control, and, as a typical sequence of operations to handle backup/recovery/disaster handling services are defined",Trouble Request Management,Provide function that request trouble detail when system trouble occurs
+,장애관리,"소프트웨어, 하드웨어, 데이터베이스, 네트워크 등 관리 대상 정보자원의 고장 및 서비스 불능 상태 등 장애 여부를 관찰, 진단, 보고, 제어, 처리하는 일련의 작업으로서 통상 백업/복구/재해처리 등의 서비스를 정의함",장애처리 결과관리,egovframework.com.sym.tbm.tbp,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal",시스템 장애발생 시 장애조치내역을 등록하고 처리결과를 조회하는 기능을 제공함 ,"COMTECOPSEQ
+COMTNTROBLINFO
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Trouble Management,"Software, hardware, database, network, and failure of the managed information resources and services, such disability is out of observation, diagnosis, report, control, and, as a typical sequence of operations to handle backup/recovery/disaster handling services are defined",Trouble Process Result Management,Provide function that request trouble management detail when system trouble occurs
+,시스템연계,"시스템을 연계하기 위한 안내와 연계신청 및 승인, 연계이력 등을 관리하는 기능을 제공함",연계기관관리,egovframework.com.ssi.syi.iis,"egovframework.com.cmm,
+egovframework.com.ssi.syi.ims,
+egovframework.com.ssi.syi.sim,
+egovframework.com.ssi.syi.ist,
+egovframework.com.sym.cal","연계대상 시스템정보(IP, 포트정보 등)를 관리하는 기능을 제공함","COMTECOPSEQ
+COMTNTROBLINFO
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,System Contact,"Software, hardware, database, network, and failure of the managed information resources and services, such disability is out of observation, diagnosis, report, control, and, as a typical sequence of operations to handle backup/recovery/disaster handling services are defined",Contact Institution Management,Provide contact target system information management function
+,시스템연계,"시스템을 연계하기 위한 안내와 연계신청 및 승인, 연계이력 등을 관리하는 기능을 제공함",연계메시지관리,egovframework.com.ssi.syi.ims,"egovframework.com.cmm,
+egovframework.com.ssi.syi.iis,
+egovframework.com.ssi.syi.sim,
+egovframework.com.ssi.syi.ist,
+egovframework.com.sym.cal",연계항목별 송수신하는 정보를 등록하여 조회하는 기능을 제공함,"COMTECOPSEQ
+COMTNTROBLINFO
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,System Contact,"Provide system contact information and contact request, approval, contact history management function",Contact Message Management,Provide inquiry registered information that transmit and receive by contact type
+,시스템연계,"시스템을 연계하기 위한 안내와 연계신청 및 승인, 연계이력 등을 관리하는 기능을 제공함",연계현황관리,egovframework.com.ssi.syi.ist,"egovframework.com.cmm,
+egovframework.com.ssi.syi.iis,
+egovframework.com.ssi.syi.ims,
+egovframework.com.ssi.syi.sim,
+egovframework.com.sym.cal","연계기관별, 연계방법별 현황을 등록하고 조회하는 기능을 제공함","COMTECOPSEQ
+COMTNTROBLINFO
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,System Contact,"Provide system contact information and contact request, approval, contact history management function",Contact Status Management,"Provide function that regists and inquiries status of contact institutions, contact methods"
+,시스템연계,"시스템을 연계하기 위한 안내와 연계신청 및 승인, 연계이력 등을 관리하는 기능을 제공함",시스템연계관리,egovframework.com.ssi.syi.sim,"egovframework.com.cmm,
+egovframework.com.ssi.syi.iis,
+egovframework.com.ssi.syi.ims,
+egovframework.com.ssi.syi.ist,
+egovframework.com.sym.cal",공유일정으로 등록한 일정을 관리하고 일별/주간으로 조회하는 기능을 제공함,"COMTECOPSEQ
+COMTNCNTCINSTT
+COMTNCNTCSERVICE
+COMTNCNTCSYSTEM
+COMTNSYSTEMCNTC
+COMTNTRSMRCVLOG
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNCNTCMESSAGE
+COMTNCNTCMESSAGEITEM",3.6.0,Y,addedOptions,System Contact,"Provide system contact information and contact request, approval, contact history management function",System Contact Management,Provide function that management schedule registered as common ownership and inquiry by daily/weekly
+,지식관리,"암묵지 지식을 형식지 지식으로 표현할 수 있도록 정보를 조직화하여 체계적으로 수집, 발굴, 활용 및 창출을 지원하는 서비스를 정의함",개인지식관리,egovframework.com.dam.per,"egovframework.com.cmm,
+egovframework.com.dam.map.mat,
+egovframework.com.dam.map.tea,
+egovframework.com.sym.cal",개인의 노하우 등 지식을 수집하고 체계적으로 활용할 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNDAMMAPTEAM
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNDAMKNOIFM
+COMTNDAMMAPKNO",3.6.0,Y,addedOptions,Knowledge Management,"Define service which systematically collect, unearth, practical use, creation information which is organized to express Tacit knowledge to Explicit knowledge",Individual Knowledge Management,Provide function that collect personal know-how and use systematic
+,지식관리,"암묵지 지식을 형식지 지식으로 표현할 수 있도록 정보를 조직화하여 체계적으로 수집, 발굴, 활용 및 창출을 지원하는 서비스를 정의함",유형별 지식맵관리,egovframework.com.dam.map.mat,"egovframework.com.cmm,
+egovframework.com.dam.map.tea,
+egovframework.com.sym.cal",지식에 대한 분류를 유형별로 분류하고 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNDAMMAPTEAM
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNDAMMAPKNO",3.6.0,Y,addedOptions,Knowledge Management,"Define service which systematically collect, unearth, practical use, creation information which is organized to express Tacit knowledge to Explicit knowledge",Knowledge Map Management by Types,Provide function that classify and management knowledge by types
+,지식관리,"암묵지 지식을 형식지 지식으로 표현할 수 있도록 정보를 조직화하여 체계적으로 수집, 발굴, 활용 및 창출을 지원하는 서비스를 정의함",조직별 지식맵관리,egovframework.com.dam.map.tea,"egovframework.com.cmm,
+egovframework.com.dam.map.mat,
+egovframework.com.sym.cal",지식에 대한 분류를 조직별로 분류하고 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNDAMMAPTEAM
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNDAMMAPKNO",3.6.0,Y,addedOptions,Knowledge Management,"Define service which systematically collect, unearth, practical use, creation information which is organized to express Tacit knowledge to Explicit knowledge",Organizational Knowledge Map Management,Provide function that classify and management knowledge by types
+,지식관리,"암묵지 지식을 형식지 지식으로 표현할 수 있도록 정보를 조직화하여 체계적으로 수집, 발굴, 활용 및 창출을 지원하는 서비스를 정의함",지식전문가관리,egovframework.com.dam.spe.spe,"egovframework.com.cmm,
+egovframework.com.dam.map.mat,
+egovframework.com.dam.map.tea,
+egovframework.com.sym.cal,
+egovframework.com.cop.com",사용자가 특정지식의 습득을 필요로 하는 경우에 해당지식의 전문가를 통하여 최적의 정보를 제공받을 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNDAMMAPTEAM
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNGNRLMBER
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNDAMMAPKNO
+COMTNDAMPRO",3.6.0,Y,addedOptions,Knowledge Management,"Define service which systematically collect, unearth, practical use, creation information which is organized to express Tacit knowledge to Explicit knowledge",Knowledge Expert Management,Provide function that if user needs specific knowledge make user to learn through expert
+,지식관리,"암묵지 지식을 형식지 지식으로 표현할 수 있도록 정보를 조직화하여 체계적으로 수집, 발굴, 활용 및 창출을 지원하는 서비스를 정의함",지식정보관리,egovframework.com.dam.mgm,"egovframework.com.cmm,
+egovframework.com.sym.cal","지식 등록, 수정, 삭제와 같은 지식정보를 관리하는 기능을 제공함","COMTECOPSEQ
+COMTNEMPLYRSCRTYESTBS
+COMTNDAMMAPTEAM
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNDAMKNOIFM
+COMTNDAMMAPKNO",3.6.0,Y,addedOptions,Knowledge Management,"Define service which systematically collect, unearth, practical use, creation information which is organized to express Tacit knowledge to Explicit knowledge",Knowledge Information Management,Provide function that manage knowledge information
+,지식관리,"암묵지 지식을 형식지 지식으로 표현할 수 있도록 정보를 조직화하여 체계적으로 수집, 발굴, 활용 및 창출을 지원하는 서비스를 정의함",지식평가관리,egovframework.com.dam.app,"egovframework.com.cmm,
+egovframework.com.sym.cal","구성원 및 조직이 내.외부 자원을 통하여 필요지식을 생성하여 시스템에 등록할 때, 전문가의 평가를 거치는 유형의 입력지식에 대해 전문가/지식관리자가 등록지식의 품질 및 유의성을 평가하고, 일정기간 또는 기준에 의해 지식을 폐기하거나 저장하는 정제활동 등의 기능을 제공함","COMTECOPSEQ
+COMTNDAMMAPTEAM
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNDAMKNOIFM
+COMTNDAMMAPKNO
+COMTNDAMPRO",3.6.0,Y,addedOptions,Knowledge Management,"Define service which systematically collect, unearth, practical use, creation information which is organized to express Tacit knowledge to Explicit knowledge",Knowledge Evaluation Management,"When constituent and organization generate knowledge needed through internal and external resource and enroll in the system, expert/knowledge managers evaluate about quality and significance which requires expert knowledge of the assessment, provide function such as a refinery activity which need to be disposed or stored for based on a period of time or standard "
+,지식관리,"암묵지 지식을 형식지 지식으로 표현할 수 있도록 정보를 조직화하여 체계적으로 수집, 발굴, 활용 및 창출을 지원하는 서비스를 정의함",지식정보제공,egovframework.com.dam.spe.req,"egovframework.com.cmm,
+egovframework.com.dam.map.mat,
+egovframework.com.dam.map.tea,
+egovframework.com.sym.cal",사용자가 특정지식의 습득을 필요로 하는 경우에 해당지식의 전문가를 통하여 최적의 정보를 제공받을 수 있는 기능을 제공함,"COMTECOPSEQ
+COMTNDAMMAPTEAM
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNDAMKNOIFM
+COMTNDAMCALRES
+COMTNDAMMAPKNO
+COMTNDAMPRO",3.6.0,Y,addedOptions,Knowledge Management,"Define service which systematically collect, unearth, practical use, creation information which is organized to express Tacit knowledge to Explicit knowledge",Knowledge Information Offer,Provide function that if user needs specific knowledge make user to learn through expert
+,달력,달력 화면을 제공함,일반달력 ,egovframework.com.sym.cal,egovframework.com.cmm,"-일반달력 
+일반 사용자 중심의 일반달력 화면을 제공함
+-행정달력 
+공공기관 행정업무 처리를 위한 행정달력 화면을 제공함
+-휴일관리 
+일반 공휴일과 추가로 지정한 공휴일(선거일)을 관리하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Calendar,Provide calendar screen,General Calendar,"- General calendar
+Provide general calendar for general user
+- Administration calendar
+Provide administration calendar for public administration
+- Rest day management
+Provide function that management general rest day and additional rest day(election day)"
+,메시지처리,주어진 키 값에 따라서 해당하는 메시지를 호출하는 기능을 제공함,경고메시지,egovframework.com.utl.cas,"egovframework.com.cmm,
+egovframework.com.utl.fcc","-경고메시지
+주어진 키 값에 따라서 경고메시지영역에 해당하는 메시지를 호출하는 기능을 제공함
+-에러메시지
+주어진 키 값에 따라서 에러메시지영역에 해당하는 메시지를 호출하는 기능을 제공함
+-정보메시지
+주어진 키 값에 따라서 정보메시지영역에 해당하는 메시지를 호출하는 기능을 제공함
+-확인메시지
+주어진 키 값에 따라서 확인메시지영역에 해당하는 메시지를 호출하는 기능을 제공함
+-세션관리
+세션 생성, 등록, 사용, 폐기하는 기능을 제공함
+-쿠키관리
+쿠키 생성, 등록, 사용, 폐기하는 기능을 제공함","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Message Process,Provide call correspond message offered by key function,Warning Message,"- Warning message
+Provide function that call correspond warning message offered by key
+- Error message
+Provide function that call correspond error message offered by key
+- Information message
+Provide function that call correspond information message offered by key
+- Confirm message
+Provide function that call correspond confirm message offered by key
+- Session management
+Provide session create, registration, use, disuse function
+- Cookie management
+Provide cookie create, registration, use, disuse function"
+,인쇄/출력,인쇄/출력 기능을 제공함,전자관인출력,egovframework.com.utl.pao,egovframework.com.cmm,"-화면인쇄
+인터넷 브라우저에서 화면의 범위를 지정하여 인쇄할 수 있는 기능을 제공함
+-프린터상태확인
+인터넷 브라우저에서 인쇄/출력 시 프린터 상태 확인 팝업창을 보여주는 기능을 제공함
+-전자관인출력
+전자적인 이미지 형태의 전자관인을 출력하는 기능을 제공함","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Printing/Output,Provide printing/output function,Electron Official Seal Output,"-Screen Print
+Provide print function that can specify range in Browser
+-Check printer status
+When print/output in Browser show printer status by pop-up
+-Print electron official seal
+Print electron official seal made like electron image form"
+,포맷/날짜/계산,단위계산,단위계산,egovframework.com.utl.fda.ucc,egovframework.com.cmm,"제곱미터를 평으로 평을 제곱미터로 환산하는 등 넓이, 길이, 무게 등에 대한 단위를 환산하는 모듈을 제공함","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Format/ Date/ Calculations,Calculated in unit,Calculated in unit,"Provide converting module like Width, Length, Weight as Convert Square meters to Square, Square to Square meters"
+,인쇄/출력/지역화,인쇄/출력/지역화 처리 기능을 제공함,유틸리티,egovframework.com.utl.fcc,egovframework.com.cmm,"인쇄/출력, 포맷/계산/변환 및 지역화 처리 컴포넌트","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,Printing/Output,Provide printing/output function,Utility,Printing/output and format/calculation/conversion component
+,웹에디터,게시판에서 사용자가 자유롭게 컨텐츠를 편집할 수 있는 기능의 컴포넌트를 제공함,웹에디터,egovframework.com.utl.wed,"egovframework.com.cmm,
+egovframework.com.utl.fcc","게시판, 자료실의 메모장에서 사용자가 자유롭게 콘텐츠를 편집할 수 있는 기능의 컴포넌트를 제공함","COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,WebEditor,Provide component that able to edit content freely by user at board,Web Editor,Provide component that user can edit notepad of board and resource room
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",시스템정보확인,egovframework.com.utl.sim,"egovframework.com.cmm,
+egovframework.com.utl.fcc",시스템관련 유틸리티 컴포넌트,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",System,System-related utility components
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",송수신 모니터링,egovframework.com.utl.sys.trm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal,
+egovframework.com.cop.ems",연계서버와 관련있는 정보시스템(송수신서버 포함)의 관련정보를 관리하는 기능을 제공함,"COMTECOPSEQ
+COMTNCNTCINSTT
+COMTNCNTCSERVICE
+COMTNCNTCSYSTEM
+COMTNSYSTEMCNTC
+COMTNTRSMRCVMNTRNG
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTHTRSMRCVMNTRNGLOGINFO",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",Transmit and Receive Monitoring,Provide function that management information-related system information related with contact server
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",DB서비스 모니터링,egovframework.com.utl.sys.dbm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal,
+egovframework.com.cop.ems","DB 접속을 통하여 주기적으로 해당 DB가 정상 서비스를 하고 있는지 모니터링하고, 문제 발생시 해당 정보를 관리자에게 통보하는 기능하는 기능을 제공함","COMTECOPSEQ
+COMTNDBMNTRNG
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",DB Service Monitoring,Provide function whether DB normally services through DB connection routinely and if problem occurs dispatch to administrator
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",HTTP서비스모니터링,egovframework.com.utl.sys.htm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal,
+egovframework.com.cop.ems","웹 서비스(웹서버 및 WAS 점검)가 정상적인지 주기적인 점검을 수행하고, 문제 발생시 해당 정보를 관리자에게 통보하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNHTTPMON
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTHHTTPMONLOGINFO",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",HTTP Service Monitoring,Provide function that check  routinely whether web service is normal and if problem occurs dispatch to administrator
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",프로세스 모니터링,egovframework.com.utl.sys.prm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal,
+egovframework.com.cop.ems","특정 프로세스가 기동 중인지 주기적으로 점검을 수행하고, 문제 발생시 해당 정보를 관리자에게 통보하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNPROCESSMON
+COMTNPROCESSMONLOGINFO",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",Process Monitoring,Provide function that check routinely whether specification process is in operation and if problem occurs dispatch to administrator
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",네트워크 서비스 모니터링,egovframework.com.utl.sys.nsm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal,
+egovframework.com.cop.ems","소켓(특정 port 점검)에 대한 네트워크 서비스가 정상적인지 주기적으로 점검을 수행하고, 문제 발생시 해당 정보를 관리자에게 통보하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNNTWRKSVCMNTRNG
+COMTNNTWRKSVCMNTRNGLOGINFO",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",Network Service Monitoring,Provide function that check routinely whether network service about  socket is normal and if problem occurs dispatch to administrator
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",파일시스템모니터링,egovframework.com.utl.sys.fsm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal,
+egovframework.com.cop.ems","파일 시스템에 대한 사용량 정보를 주기적으로 모니터링하고, 임계치 이상 사용되면 해당 정보를 관리자에게 통보하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNFILESYSMNTRNG
+COMTNFILESYSMNTRNGLOGINFO",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",File System Monitoring,"Provide function that usage quantity of file system is periodically monitored and if usage quantity overs threshold, dispatch to administrator"
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",프록시서비스,egovframework.com.utl.sys.pxy,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.sym.cal","네트워크 연결에 대한 프록시 설정을 동적으로 관리하고 연결에 대한 기본 서비스(telnet, ftp, jdbc 연결)에 대한 로깅을 기록할 수 있는 네트워크 서비스 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNPROXYINFO
+COMTNPROXYLOGINFO",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",Proxy Service,Provide function that can record basic service about logging which manage proxy determination of network connection
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",파일동기화,egovframework.com.utl.sys.ssy,egovframework.com.cmm,파일 저장 및 삭제에 대하여 여러 AP 서버에 동기화 시키는 기능으로 AP 서버들 간 동기화를 통해 파일 첨부 및 다운로드 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSYNCHRNSERVERINFO",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",File Synchronization,Provide attaching and downloading function through AP server synchronization which save and delete file
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",로그인세션정보체크,egovframework.com.utl.sys.rsc,egovframework.com.cmm,로그인한 세션정보를 체크하여 정의한 페이지로 이동하게 하는 기능을 제공함,"COMTECOPSEQ
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNORGNZTINFO
+COMTNFILE
+COMTNFILEDETAIL",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",Login Session Information Check,Provide function that make page movement to define page by checking login session information
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",서버자원 모니터링,egovframework.com.utl.sys.srm,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.sms,
+egovframework.com.sym.cal,
+egovframework.com.cop.ems","웹서버, WAS, DB 서버 등의 서버자원의 메모리 등 자원 사용 현황을 모니터링하는 기능을 제공함","COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSMS
+COMTNSMSRECPTN
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNSERVEREQPMNINFO
+COMTNSYNCHRNSERVERINFO
+COMTNSERVERINFO
+COMTNSERVEREQPMNRELATE
+COMTNSERVERRESRCELOGINFO",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",Server Resource Monitoring,Provide monitoring usage of resource status function like server resource function
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",웹표준검사,egovframework.com.utl.sys.wsi,egovframework.com.cmm,브라우저 호환성을 위해 웹표준을 준수했는지를 검사하는 기능을 제공함,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSMS
+COMTNSMSRECPTN
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNSERVEREQPMNINFO
+COMTNSYNCHRNSERVERINFO
+COMTNSERVERINFO
+COMTNSERVEREQPMNRELATE
+COMTNSERVERRESRCELOGINFO",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",Web Standard Inspection,Provide function whether observanced web standard for browser compatibillity
+,시스템,"정보시스템의 관리, 유지보수, 장애처리를 지원하기 위한 소프트웨어배포, 시스템모니터링, 구성관리, 형상관리, 원격제어, 장애관리, 접속현황 관리, 동기화 등이 해당",중복로그인 방지,egovframework.com.utl.slm,egovframework.com.cmm,WAS환경이 아닌 서버에 대한 중복 로그인 방지,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSMS
+COMTNSMSRECPTN
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNSERVEREQPMNINFO
+COMTNSYNCHRNSERVERINFO
+COMTNSERVERINFO
+COMTNSERVEREQPMNRELATE
+COMTNSERVERRESRCELOGINFO",3.6.0,Y,addedOptions,System,"Software wide distribution, system monitoring, composition management, form managemenr, remote control, trouble management, connect status management, synchronization for information system of maintenance, trouble process",MultiLoginPreventor,Login avoid duplication on non WAS environment server
+,외부컴포넌트,오픈커뮤니티 공모전 수상 컴포넌트,JFILE,egovframework.com.ext.jfile,egovframework.com.cmm,jfile 업/다운로드 컴포넌트는 AJAX 기반의 업그레이드 된 기술로 개발자들이 쉽게 파일 업로드 컴포넌트를 다룰 수 있도록 해 줌,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSMS
+COMTNSMSRECPTN
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNSERVEREQPMNINFO
+COMTNSYNCHRNSERVERINFO
+COMTNSERVERINFO
+COMTNSERVEREQPMNRELATE
+COMTNSERVERRESRCELOGINFO",3.6.0,Y,addedOptions,External components,Contest open community component,JFile,jfile up / download component technologies of AJAX-based developers can easily upgraded to handle the file upload component to zoom
+,외부컴포넌트,오픈커뮤니티 공모전 수상 컴포넌트,소셜 인증 기반 로그인 기능,egovframework.com.ext.oauth,"egovframework.com.cmm,
+egovframework.com.uat.uia,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.uss.umt,
+egovframework.com.utl.sim,
+egovframework.com.sec.rnc,
+egovframework.com.sym.ccm.zip,
+egovframework.com.uss.ion.lsi",OAuth 연동은 전자정부 표준프레임워크 공통컴포넌트의 로그인을 Facebook과 Twitter 계정으로 인증하는 기능,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSMS
+COMTNSMSRECPTN
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNSERVEREQPMNINFO
+COMTNSYNCHRNSERVERINFO
+COMTNSERVERINFO
+COMTNSERVEREQPMNRELATE
+COMTNSERVERRESRCELOGINFO",3.6.0,Y,addedOptions,External components,Contest open community component,Oauth,OAuth to authenticate your login interlock function of e-government standard framework common components to your Facebook and Twitter accounts
+,외부컴포넌트,오픈커뮤니티 공모전 수상 컴포넌트,LDAP조직도관리,egovframework.com.ext.ldap,egovframework.com.cmm,"LDAP조직도관리는 조직과 사용자 정보를 효율적으로 관리하기 위한 컴포넌트로, 
+LDAP과의 연계를 통해 조회 성능을 향상시키고, 그래프나 차트와 같이 다양한 방식으로 조직도를 표현할 수 있는 기능을 제공","COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSMS
+COMTNSMSRECPTN
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNSERVEREQPMNINFO
+COMTNSYNCHRNSERVERINFO
+COMTNSERVERINFO
+COMTNSERVEREQPMNRELATE
+COMTNSERVERRESRCELOGINFO",3.6.0,Y,addedOptions,External components,Contest open community component,OrgManageLdap,"LDAP is a component management organization for managing the organization and user information effectively,
+To improve the query performance by a link to the LDAP, provide the ability to represent the organization in a variety of ways, such as a graph or chart"
+,외부컴포넌트,오픈커뮤니티 공모전 수상 컴포넌트,배치 프레임워크 간소화 기능,egovframework.com.ext.batch,egovframework.com.cmm,"Batch 개발은 업무 특성으로 일반 개발과 달라, 학습과 설정이 필요하다. Easy Batch는 는 이 부분을 간소화 할 수 있는 기능을 제공","COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSMS
+COMTNSMSRECPTN
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNSERVEREQPMNINFO
+COMTNSYNCHRNSERVERINFO
+COMTNSERVERINFO
+COMTNSERVEREQPMNRELATE
+COMTNSERVERRESRCELOGINFO",3.6.0,Y,addedOptions,External components,Contest open community component,EasyBatch,"Batch development with business development and general characteristics vary, learning and setting is required. Easy Batch provides the ability to streamline this section"
+,외부컴포넌트,오픈커뮤니티 공모전 수상 컴포넌트,Web Messenger,egovframework.com.ext.msg,"egovframework.com.cmm,
+egovframework.com.utl.fcc,
+egovframework.com.cop.ems,
+egovframework.com.utl.wed,
+egovframework.com.utl.sim,
+egovframework.com.uat.uia,
+egovframework.com.uss.ion.lsi",HTML5 WebSocket와 Java Websocket을 이용하여 메신저 기능을 제공,"COMTECOPSEQ
+COMTNRESTDE
+COMTCCMMNCLCODE
+COMTCCMMNCODE
+COMTCCMMNDETAILCODE
+COMTNAUTHORGROUPINFO
+COMTNGNRLMBER
+COMTNORGNZTINFO
+COMTNEMPLYRINFO
+COMTNENTRPRSMBER
+COMVNUSERMASTER
+COMTNFILE
+COMTNFILEDETAIL
+COMTNSMS
+COMTNSMSRECPTN
+COMTHTRSMRCVMNTRNGLOGINFO
+COMTHDBMNTRNGLOGINFO
+COMTNSERVEREQPMNINFO
+COMTNSYNCHRNSERVERINFO
+COMTNSERVERINFO
+COMTNSERVEREQPMNRELATE
+COMTNSERVERRESRCELOGINFO",3.6.0,Y,addedOptions,External components,Contest open community component,WebMessenger,Provides instant messaging capabilities using the HTML5 WebSocket and Java Websocket
