@@ -5,6 +5,10 @@ Created on Fri Nov 10 16:20:46 2017
 @author: LeeBaekHaeng
 """
 
+import os
+
+import god.test.os.os_test as god
+
 
 def def1():
     w_count = {}
@@ -77,15 +81,21 @@ def def1():
                 # print lst + str(id[lst])
 
 
-# def def2():
-#     cols = pd.Series(df.columns)
-#     for dup in df.columns.get_duplicates(): cols[df.columns.get_loc(dup)] = [
-#         dup + '.' + str(d_idx) if d_idx != 0 else dup for d_idx in range(df.columns.get_loc(dup).sum())]
-#     df.columns = cols
+def def2():
+    #     cols = pd.Series(df.columns)
+    #     for dup in df.columns.get_duplicates(): cols[df.columns.get_loc(dup)] = [
+    #         dup + '.' + str(d_idx) if d_idx != 0 else dup for d_idx in range(df.columns.get_loc(dup).sum())]
+    #     df.columns = cols
+
+    # print os.getcwd()
+
+    # god.test.os.os_test.def1()
+
+    print god.def2()
 
 
-def god_rename_columns(columns):
-    rename_columns = []
+def duplicate_column_rename(columns):
+    duplicate_columns_rename = []
 
     column_count = {}
 
@@ -100,7 +110,7 @@ def god_rename_columns(columns):
     for lst in columns:
         if column_count[lst] == 1:
             print lst
-            rename_columns.append(lst)
+            duplicate_columns_rename.append(lst)
         else:
             try:
                 id[lst] += 1
@@ -109,17 +119,17 @@ def god_rename_columns(columns):
 
             if id[lst] == 1:
                 print lst
-                rename_columns.append(lst)
+                duplicate_columns_rename.append(lst)
             else:
                 print lst + str(id[lst])
-                rename_columns.append(lst + str(id[lst]))
+                duplicate_columns_rename.append(lst + str(id[lst]))
 
-    return rename_columns
+    return duplicate_columns_rename
 
 
 # def1()
 
-# def2()
+def2()
 
-rename_columns = god_rename_columns(["a", "id", "value", "id", "id", "value", "id", "id", "z"])
-print rename_columns
+# rename_columns = god_duplicate_column_rename(["a", "id", "value", "id", "id", "value", "id", "id", "z"])
+# print rename_columns

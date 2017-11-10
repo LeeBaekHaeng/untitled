@@ -14,10 +14,16 @@ import sys
 import matplotlib
 import matplotlib.font_manager as font_manager
 
+import os
+
+import god.duplicate_column_rename
+
 print '이백행 dlqorgod@naver.com'
 
-
 # plt.rcParams["font.family"] = 'NanumGothic'
+
+desktop = os.path.expanduser('~') + '/Desktop'
+cwd = os.getcwd()
 
 
 def pairplot():
@@ -27,7 +33,7 @@ def pairplot():
 
     # sns.plt.suptitle('title')
 
-    sns.pairplot(df, size=2)
+    # sns.pairplot(df, size=2)
     # sns.pairplot(df, size=2, ax=ax)
     # sns.pairplot(df_1, size=2)
 
@@ -35,7 +41,10 @@ def pairplot():
 
     # sns.plt.suptitle('title')
 
-    fname = ('C:\Users\LeeBaekHaeng\Desktop/' + ('_').join(['user', 'pairplot']))
+
+
+    # fname = ('C:\Users\LeeBaekHaeng\Desktop/' + ('_').join(['user', 'pairplot']))
+    fname = (desktop + '/' + ('_').join(['user', 'pairplot']))
     plt.savefig(fname, bbox_inches='tight')
     plt.show()
     plt.gcf().clear()
@@ -45,7 +54,8 @@ def pairplot2(df):
     sns.pairplot(df, size=2)
     # sns.pairplot(df_1, size=2)
 
-    fname = ('C:\Users\LeeBaekHaeng\Desktop/' + ('_').join(['user', 'pairplot']))
+    # fname = ('C:\Users\LeeBaekHaeng\Desktop/' + ('_').join(['user', 'pairplot']))
+    fname = (desktop + '/' + ('_').join(['user', 'pairplot']))
     plt.savefig(fname, bbox_inches='tight')
     plt.show()
     plt.gcf().clear()
@@ -77,21 +87,22 @@ def def1():
     df = pd.concat([df_1, df_2, df_3], axis=1)
     # df.duplicated(list(df.columns));
 
-    cols = pd.Series(df.columns)
-    # for dup in df.columns.get_duplicates(): cols[df.columns.get_loc(dup)] = [
-    #     dup + '.' + str(d_idx) if d_idx != 0 else dup for d_idx in range(df.columns.get_loc(dup).sum())]
-    for dup in df.columns.get_duplicates():
-        # print df.columns.get_loc(dup)
-        # print df.columns.get_loc(dup).sum()
-        # print sum(df.columns.get_loc(dup))
-        print sum(list(df.columns.get_loc(dup)))
-    df.columns = cols
+    # cols = pd.Series(df.columns)
+    # # for dup in df.columns.get_duplicates(): cols[df.columns.get_loc(dup)] = [
+    # #     dup + '.' + str(d_idx) if d_idx != 0 else dup for d_idx in range(df.columns.get_loc(dup).sum())]
+    # for dup in df.columns.get_duplicates():
+    #     # print df.columns.get_loc(dup)
+    #     # print df.columns.get_loc(dup).sum()
+    #     # print sum(df.columns.get_loc(dup))
+    #     print sum(list(df.columns.get_loc(dup)))
+    df.columns = god.duplicate_column_rename.duplicate_column_rename(df.columns)
 
     print df
 
 
 def def2():
-    filepath_or_buffer = 'C:/Users/LeeBaekHaeng/Documents/GitHub/untitled/test/pandas_df_test_a1.csv'
+    # filepath_or_buffer = 'C:/Users/LeeBaekHaeng/Documents/GitHub/untitled/test/pandas_df_test_a1.csv'
+    filepath_or_buffer = cwd + '/pandas_df_test_a1.csv'
     # usecols = ['date', 'id', 'value']
     usecols = ['date', 'id']
     date_parser = lambda x: pd.datetime.strptime(x, '%Y-%m-%d')
@@ -104,7 +115,8 @@ def def2():
                      low_memory=False)
     print df
 
-    filepath_or_buffer = 'C:/Users/LeeBaekHaeng/Documents/GitHub/untitled/test/pandas_df_test_a2.csv'
+    # filepath_or_buffer = 'C:/Users/LeeBaekHaeng/Documents/GitHub/untitled/test/pandas_df_test_a2.csv'
+    filepath_or_buffer = cwd + '/pandas_df_test_a2.csv'
     # usecols = ['date', 'id', 'value']
     usecols = ['date', 'id']
     date_parser = lambda x: pd.datetime.strptime(x, '%Y-%m-%d')
