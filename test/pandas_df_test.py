@@ -18,6 +18,8 @@ import os
 
 import god.duplicate_column_rename
 
+import god.godlib as godlib
+
 print '이백행 dlqorgod@naver.com'
 
 # plt.rcParams["font.family"] = 'NanumGothic'
@@ -150,6 +152,11 @@ def def2():
 
     print list(df_df2.columns)
 
+    # df_df2.columns = god.duplicate_column_rename.duplicate_column_rename(df_df2.columns)
+    df_df2.columns = godlib.duplicate_column_rename(df_df2.columns)
+
+    print df_df2
+
     pairplot2(df_df2)
 
 
@@ -176,8 +183,8 @@ def def3():
 
 def main():
     print 'main'
-    def1()
-    # def2()
+    # def1()
+    def2()
     # def3()
 
 
