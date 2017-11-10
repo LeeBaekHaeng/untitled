@@ -20,6 +20,7 @@ import god.duplicate_column_rename
 
 import god.godlib as godlib
 
+
 print '이백행 dlqorgod@naver.com'
 
 # plt.rcParams["font.family"] = 'NanumGothic'
